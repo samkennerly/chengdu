@@ -1,7 +1,5 @@
-# Caches
-__pycache__/
-*.py[codz]
-*$py.class
+# Apple slop
+.DS_Store
 
 # Environments
 .env
@@ -12,5 +10,10 @@ __pycache__/
 profile_default/
 ipython_config.py
 
-# VScode
+# Python caches
+__pycache__/
+*.py[codz]
+*$py.class
+
+# VScode slop
 .vscode/
