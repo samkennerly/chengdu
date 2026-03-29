@@ -2,11 +2,12 @@
 Read and write some files.
 Use common formats that anyone can read.
 """
+import csv
 import json
 
 from pathlib import Path
 
-FOLDER = Path(__file__).resolve().parent / "files"
+FOLDER = Path(__file__).parent / "files"
 HELLO_PATH = FOLDER / "hello.txt"
 FRUITS_PATH = FOLDER / "fruits.json"
 STUDENTS_PATH = FOLDER / "students.csv"
@@ -14,44 +15,51 @@ STUDENTS_PATH = FOLDER / "students.csv"
 
 def read_txt(path):
     print(f"Read text from {path}")
-    raise NotImplementedError
+    return path.read_text()
 
 
 def save_txt(data, path):
     print(f"Save text to {path}")
-    raise NotImplementedError
+    path.write_text(data)
 
 
 def read_json(path):
     print(f"Read JSON data from {path}")
-    raise NotImplementedError
+    with open(path) as file:
+        return json.load(file)
 
 
 def save_json(data, path):
     print(f"Save JSON data to {path}")
-    raise NotImplementedError
+    with open(path, "w") as file:
+        json.dump(data, file, indent=2)
 
 
 def read_csv(path):
     print(f"Read table from {path}")
-    raise NotImplementedError
+    with open(path) as file:
+        return list(csv.reader(file, dialect='unix'))
 
 
 def save_csv(data, path):
     print(f"Save table to {path}")
-    raise NotImplementedError
+    with open(path, "w") as file:
+        writer = csv.writer(file, dialect='unix')
+        for row in data:
+            writer.writerow(row)
 
 
 # Tests
 
 
 def test_txt(path=HELLO_PATH):
-    hello = "Hello, World!\n"
-    save_txt(hello, path)
+    hello = "Hello, World!"
+    print(f"\nTest text: {hello}")
 
+    save_txt(hello, path)
     data = read_txt(path)
 
-    assert data == hello, f"text in {path} does not match original"
+    assert data == hello, f"text in {path} is {data}"
 
 
 def test_json(path=FRUITS_PATH):
@@ -61,11 +69,12 @@ def test_json(path=FRUITS_PATH):
         "pear": "梨子",
         "plum": "李子",
     }
-    save_json(fruits, path)
+    print(f"\nTest JSON data: {fruits}")
 
+    save_json(fruits, path)
     data = read_json(path)
 
-    assert data == fruits, f"data in {path} does not match original"
+    assert data == fruits, f"data in {path} is {data}"
 
 
 def test_csv(path=STUDENTS_PATH):
@@ -80,11 +89,12 @@ def test_csv(path=STUDENTS_PATH):
         ["Turing", "Alan", "1912-06-23", "UK"],
         ["van Rossum", "Guido", "1956-01-31", "NL"],
     ]
-    save_json(students, path)
+    print(f"\nTest table:", *students, sep="\n")
 
+    save_csv(students, path)
     data = read_csv(path)
 
-    assert data == students, f"table in {path} does not match original"
+    assert data == students, f"table in {path} is {data}"
 
 
 test_txt()
