@@ -2,8 +2,8 @@
 Read and write some files.
 Use common formats that anyone can read.
 """
-from pathlib import Path
 
+from pathlib import Path
 
 FOLDER = Path(__file__).resolve().parent / "files"
 HELLO_PATH = HERE / "hello.txt"
@@ -11,18 +11,15 @@ FRUITS_PATH = HERE / "fruits.json"
 STUDENTS_PATH = HERE / "students.csv"
 
 
-# TXT: plain text
-
 def read_txt(path):
     print(f"Read text from {path}")
     raise NotImplementedError
+
 
 def save_txt(data, path):
     print(f"Save text to {path}")
     raise NotImplementedError
 
-
-# JSON: JavaScript Object Notation
 
 def read_json(path):
     print(f"Read JSON data from {path}")
@@ -33,8 +30,6 @@ def save_json(data, path):
     print(f"Save JSON data to {path}")
     raise NotImplementedError
 
-
-# CSV: Comma-Separated Values
 
 def read_csv(path):
     print(f"Read table from {path}")
@@ -48,21 +43,22 @@ def save_csv(data, path):
 
 # Tests
 
+
 def test_txt(path=HELLO_PATH):
-    hello = "Hello, World!"
+    hello = "Hello, World!\n"
     save_text(hello, path)
 
     data = read_txt(path)
 
-    assert data = hello, f"text in {path} does not match original"
+    assert data == hello, f"text in {path} does not match original"
 
 
 def test_json(path=FRUITS_PATH):
     fruits = {
-        "apple" : "苹果",
-        "cherry" : "樱桃",
-        "pear"  : "梨子",
-        "plum"  : "李子",
+        "apple": "苹果",
+        "cherry": "樱桃",
+        "pear": "梨子",
+        "plum": "李子",
     }
     save_json(fruits, path)
 
