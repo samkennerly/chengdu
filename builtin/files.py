@@ -2,6 +2,7 @@
 Read and write some files.
 Use common formats that anyone can read.
 """
+
 import csv
 import json
 
@@ -38,13 +39,13 @@ def save_json(data, path):
 def read_csv(path):
     print(f"Read table from {path}")
     with open(path) as file:
-        return list(csv.reader(file, dialect='unix'))
+        return list(csv.reader(file, dialect="unix"))
 
 
 def save_csv(data, path):
     print(f"Save table to {path}")
     with open(path, "w") as file:
-        writer = csv.writer(file, dialect='unix')
+        writer = csv.writer(file, dialect="unix")
         for row in data:
             writer.writerow(row)
 
