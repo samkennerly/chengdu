@@ -1,0 +1,17 @@
+
+# Update conda
+
+# What envs are installed?
+conda env list
+
+# Create a conda env named 'science'
+conda create --name science python=3.14
+
+# Install requirements.txt in the 'science' env
+conda install --name science --file requirements.txt
+
+# Activate science
+conda activate science
+
+# Deactivate science
+conda deactivate
