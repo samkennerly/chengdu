@@ -2,13 +2,14 @@
 Read and write some files.
 Use common formats that anyone can read.
 """
+import json
 
 from pathlib import Path
 
 FOLDER = Path(__file__).resolve().parent / "files"
-HELLO_PATH = HERE / "hello.txt"
-FRUITS_PATH = HERE / "fruits.json"
-STUDENTS_PATH = HERE / "students.csv"
+HELLO_PATH = FOLDER / "hello.txt"
+FRUITS_PATH = FOLDER / "fruits.json"
+STUDENTS_PATH = FOLDER / "students.csv"
 
 
 def read_txt(path):
@@ -46,7 +47,7 @@ def save_csv(data, path):
 
 def test_txt(path=HELLO_PATH):
     hello = "Hello, World!\n"
-    save_text(hello, path)
+    save_txt(hello, path)
 
     data = read_txt(path)
 
