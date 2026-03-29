@@ -1,8 +1,8 @@
 Ada Lovelace 91
+Al Sweigart 65
 Alan Turing 90
 Charles Babbage 88
-Guido van Rossum 72
 Grace Hopper 100
-Julia Evans 89
+Guido van Rossum 72
+Radia Perlman 80
 Linus Torvalds 0
-Sam Kennerly 42
