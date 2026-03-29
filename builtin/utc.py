@@ -1,6 +1,7 @@
 """
 Show the current local and UTC time.
 """
+
 from datetime import datetime, timezone
 import time
 
@@ -15,5 +16,5 @@ while True:
     print()
     print("UTC   :", utc_time)
     print("Local :", local_time)
-    
+
     time.sleep(1)

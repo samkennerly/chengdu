@@ -55,7 +55,8 @@ def save_csv(data, path):
 
 def test_txt(path=HELLO_PATH):
     hello = "Hello, World!"
-    print(f"\nTest text: {hello}")
+    print("\nTest text:")
+    print(hello)
 
     save_txt(hello, path)
     data = read_txt(path)
@@ -65,12 +66,14 @@ def test_txt(path=HELLO_PATH):
 
 def test_json(path=FRUITS_PATH):
     fruits = {
-        "apple": "苹果",
-        "cherry": "樱桃",
-        "pear": "梨子",
-        "plum": "李子",
+        "apple": ["苹果", "píngguǒ"],
+        "cherry": ["樱桃", "yīngtáo"],
+        "pear": ["梨子", "lízǐ"],
+        "plum": ["李子", "lǐzǐ"],
     }
-    print(f"\nTest JSON data: {fruits}")
+    print("\nTest JSON data:")
+    for key, value in fruits.items():
+        print(f"{key}: {value}")
 
     save_json(fruits, path)
     data = read_json(path)
@@ -90,7 +93,9 @@ def test_csv(path=STUDENTS_PATH):
         ["Turing", "Alan", "1912-06-23", "UK"],
         ["van Rossum", "Guido", "1956-01-31", "NL"],
     ]
-    print(f"\nTest table:", *students, sep="\n")
+    print("\nTest table:")
+    for row in students:
+        print(row)
 
     save_csv(students, path)
     data = read_csv(path)
