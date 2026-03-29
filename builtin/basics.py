@@ -9,13 +9,13 @@ print("Hello, world!")
 # Do some mathematics
 print("10 + 4 =", 10 + 4)
 print("10 * 4 =", 10 * 4)
-print("10 ** 4 =", 10 ** 4)
+print("10 ** 4 =", 10**4)
 
 # Concatenate strings
-print("'Alice' + 'Bob' =", 'Alice' + 'Bob')
+print("'Alice' + 'Bob' =", "Alice" + "Bob")
 
 # Replicate a string
-print("5 * 'Alice' =", 5 * 'Alice')
+print("5 * 'Alice' =", 5 * "Alice")
 
 # Try an illegal operation
 try:
@@ -42,22 +42,13 @@ spam += 2
 print("spam = ", spam)
 
 # Overwite spam
-spam = 'Hello'
+spam = "Hello"
 print("spam =", spam)
 spam = "你好"
 print("spam =", spam)
 
 # These are illegal variable names:
-#88888888 = "lucky"
-#8eights = "lucky"
-#eight8's = "lucky"
-#return = "lucky"
-
-
-
-
-
-
-
-
-
+# 88888888 = "lucky"
+# 8eights = "lucky"
+# eight8's = "lucky"
+# return = "lucky"
