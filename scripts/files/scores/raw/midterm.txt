@@ -1,8 +1,0 @@
-Ada Lovelace 91
-Al Sweigart 65
-Alan Turing 90
-Charles Babbage 88
-Grace Hopper 100
-Guido van Rossum 72
-Radia Perlman 80
-Linus Torvalds 0
