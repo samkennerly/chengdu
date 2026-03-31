@@ -4,7 +4,6 @@ This chapter uses Booleans. Many of us call them "bools".
 A bool can be True or False. It can't have any other value.
 """
 
-
 # Comparisons
 
 # (x == y) works a bit like 是不是.
@@ -70,11 +69,11 @@ else:
 # We can use 'elif' for multiple conditions.
 # (In some languages, 'elif' is written 'else if'.)
 language = input("What language should we speak? ")
-if (language == "English"):
+if language == "English":
     print("Hello, World!")
-elif (language == "Deutsch"):
+elif language == "Deutsch":
     print("Guten Tag, Welt!")
-elif (language == "中文"):
+elif language == "中文":
     print("你好世界！")
 else:
     print("I'm sorry. I can't speak", language)
@@ -87,8 +86,8 @@ else:
 # Values which are logically False are called "falsey".
 print("bool(0)", bool(0))
 print("bool(1)", bool(1))
-print("bool('')", bool(''))
-print("bool('Sam')", bool('Sam'))
+print("bool('')", bool(""))
+print("bool('Sam')", bool("Sam"))
 
 # We can do logical comparisons with things that are not bools.
 # Sometimes this is a bad idea. It can be very confusing.
