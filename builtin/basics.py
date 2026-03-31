@@ -63,15 +63,15 @@ print("spam is now", spam)
 # return = "lucky"
 
 # Compare some things of different types.
-print("42 == '42'", 42 == '42')
+print("42 == '42'", 42 == "42")
 print("42 == 42.0", 42 == 42.0)
 print("42.0 == 0042.000", 42.0 == 0042.000)
 
 # Practice using the built-in type() function.
 print("42 is a", type(42))
 print("42.0 is a ", type(42.0))
-print("'42' is a ", type('42'))
-print("'四十二' is a ", type('四十二'))
+print("'42' is a ", type("42"))
+print("'四十二' is a ", type("四十二"))
 
 # Practice using the built-in round() function.
 pi = 3.1415926535897932384626433
@@ -88,12 +88,12 @@ print("abs(round(pi, 3)) is", abs(round(pi, 3)))
 
 # I copypasted this code from page 13 of our textbook.
 # It's open-source, so I can do that! It's legal.
-print('Hello, world!')
-print('What is your name?') # Ask for their name.
-my_name = input('>')
-print('It is good to meet you, ' + my_name)
-print('The length of your name is:')
+print("Hello, world!")
+print("What is your name?")  # Ask for their name.
+my_name = input(">")
+print("It is good to meet you, " + my_name)
+print("The length of your name is:")
 print(len(my_name))
-print('What is your age?') # Ask for their age.
-my_age = input('>')
-print('You will be ' + str(int(my_age) + 1) + ' in a year.')
+print("What is your age?")  # Ask for their age.
+my_age = input(">")
+print("You will be " + str(int(my_age) + 1) + " in a year.")
