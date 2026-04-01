@@ -4,28 +4,18 @@ Review of loops from Chapter 3.
 
 # while loops
 
-# Loop example copypasted from page 50.
-# In this example, the name 'spam' means nothing.
-# It just counts how many times the loop has run.
+# I copypasted this example from page 50. I added one line.
 spam = 0
 while spam < 5:
     print("Hello, world!")
     spam = spam + 1
+    print("This loop ran", spam, "times.")
 
-
-# Another silly loop: print many times the loop has run.
-x = 1
-while x <= 3:
-    print("This loop ran", x, "times")
-    x += 1
-
-# A while loop copied from page 52.
-# This is an "infinite loop" unless the user types 'your name'.
-# (It's not really infinite. It stops when the program crashes.)
+# A dangerous "infinite" loop. It will continue to loop until
+# the user enters my name or this Python script crashes.
 name = ""
-while name != "your name":
-    print("Please type your name.")
-    name = input(">")
+while name != "Sam":
+    name = input("What is your name? ")
 
 # A while loop with a 'break' statement.
 while True:
