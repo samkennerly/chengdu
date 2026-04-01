@@ -59,9 +59,11 @@ if (14 != 40) and (40 == 40):
     print("十四不是四十。四十是四十。")
 
 # 'else' tells Python what to do if the first condition is False.
+# Caution: Don't write passwords in source code! It's unsafe.
+# This is not my real password. I only use it for examples.
 name = input("What is your name? ")
 password = input("What is your password? ")
-if (name == "Sam") and (password == "qinghuajiao"):
+if (name == "Sam") and (password == "huajiao"):
     print("Hello, teacher!")
 else:
     print("Access denied.")
