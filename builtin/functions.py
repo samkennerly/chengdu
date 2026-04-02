@@ -93,8 +93,8 @@ say_goodbye()
 
 # Many builtin functions accept kwargs. For example, print()
 # accepts a kwarg called 'sep'. It means 'separator'.
-# If you print many things, Python will insert a separator between
-# those things. By default, 'sep' is a space. We can change it:
+# If you call print multiple args, Python inserts a separator
+# between them. The default value of 'sep' is a space.
 
 print("Ada", "Charles", "Guido")
 print("Ada", "Charles", "Guido", sep=" & ")
