@@ -4,20 +4,17 @@ Review of loops from Chapter 3.
 
 # while loops
 
-# I copypasted this example from page 50. I added one line.
+# I copypasted this example from page 50 in the textbook.
+# Then I added one line. It's legal because it's open-source!
 spam = 0
 while spam < 5:
     print("Hello, world!")
     spam = spam + 1
     print("This loop ran", spam, "times.")
 
-# A dangerous "infinite" loop. It will continue to loop until
-# the user enters my name or this Python script crashes.
-name = ""
-while name != "Sam":
-    name = input("What is your name? ")
-
-# A while loop with a 'break' statement.
+# This is an "infinite" loop. If the user does not give the
+# answer we expect, then it will loop again and again until
+# the program crashes or you force it to stop with CTRL-C.
 while True:
     answer = input("What is your favorite language? ")
     if answer != "Python":
@@ -26,7 +23,7 @@ while True:
         print("Python is my favorite language too!")
         break
 
-# A while loop with 'break' and 'continue' statements.
+# An example of the 'continue' statement.
 # Caution: Don't write passwords in source code! It's unsafe.
 # This is not my real password. I only use it for examples.
 while True:
@@ -43,10 +40,9 @@ while True:
 
     print("Access denied. Try again.")
 
-# Example of using "truthy" and "falsey" values.
-# An empty string is falsey. Any other string is truthy.
+# This example uses "truthy" and "falsey" values.
+# An empty string is falsey. All other strings are truthy.
 # This will loop until the user types an answer.
-# Any answer is acceptable.
 answer = ""
 while not answer:
     answer = input("What is your favorite color? ")
