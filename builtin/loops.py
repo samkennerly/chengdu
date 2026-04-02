@@ -89,10 +89,9 @@ for x in range(0, 100, 10):
     print(x)
 
 
-# Another example of 'break' and 'continue' statements.
 # This is like our previous name & password loop, but
 # it's not an infinite loop. After 3 failed attempts,
-# it will force the program to quit.
+# the loop finishes.
 
 attempts = 3
 for x in range(attempts, 0, -1):
@@ -106,6 +105,9 @@ for x in range(attempts, 0, -1):
     if password == "huajiao":
         print("你好老师")
         break
+
+
+# If the user has no more attempts, this will exit Python.
 
 if not attempts:
     print("Access denied.")
