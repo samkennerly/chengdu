@@ -1,50 +1,49 @@
-"""
-Review of loops from Chapter 3.
-"""
+# """
+# Review of loops from Chapter 3.
+# """
 
-# while loops
+# # while loops
 
-# I copypasted this example from page 50 in the textbook.
-# It's legal because it's open-source!
-spam = 0
-while spam < 5:
-    print("Hello, world!")
-    spam = spam + 1
+# # I copypasted this example from page 50 in the textbook.
+# spam = 0
+# while spam < 5:
+#     print("Hello, world!")
+#     spam = spam + 1
 
-# This is an "infinite" loop. If the user does not give the
-# answer we expect, then it will loop again and again until
-# the program crashes or you force it to stop with CTRL-C.
-while True:
-    answer = input("What is your favorite language? ")
-    if answer != "Python":
-        print("I don't like", answer, ". Try again.")
-    else:
-        print("Python is my favorite language too!")
-        break
+# # This is an "infinite" loop. If the user does not give the
+# # answer we want, then it will loop again and again until
+# # the program crashes or you force it to stop with CTRL-C.
+# while True:
+#     answer = input("What is your favorite language? ")
+#     if answer != "Python":
+#         print("I don't like", answer, ". Try again.")
+#     else:
+#         print("Python is my favorite language too!")
+#         break
 
-# An example of the 'continue' statement.
-# Caution: Don't write passwords in source code! It's unsafe.
-# This is not my real password. I only use it for examples.
-while True:
+# # This loop is an example of the 'continue' statement.
+# # Caution: Don't write passwords in source code! It's not safe.
+# # This is a fake password that I only use for code examples.
+# while True:
 
-    name = input("What is your name? ")
-    if name != "Sam":
-        print(name, "is not authorized to exit this loop.")
-        continue
+#     name = input("What is your name? ")
+#     if name != "Sam":
+#         print(name, "is not authorized to exit this loop.")
+#         continue
 
-    password = input("What is your password? ")
-    if password == "huajiao":
-        print("你好老师")
-        break
+#     password = input("What is your password? ")
+#     if password == "huajiao":
+#         print("你好老师")
+#         break
 
-    print("Access denied. Try again.")
+#     print("Access denied. Try again.")
 
-# This example uses "truthy" and "falsey" values.
-# An empty string is falsey. All other strings are truthy.
-# This will loop until the user types an answer.
-answer = ""
-while not answer:
-    answer = input("What is your favorite color? ")
+# # This loop uses "truthy" and "falsey" values.
+# # An empty string is falsey. All other strings are truthy.
+# # This will loop until the user types an answer.
+# answer = ""
+# while not answer:
+#     answer = input("What is your favorite color? ")
 
 
 # for loops
@@ -54,10 +53,47 @@ while not answer:
 # (If I forget that line, then the while loop will be infinite!)
 x = 1
 while x < 4:
-    print("This while loop ran", x, "times.")
+    print("This loop ran", x, "times.")
     x += 1
 
 for x in range(1, 4):
-    print("This for loop ran", x, "times.")
+    print("This loop ran", x, "times.")
+
+# range() is a builtin function. It comes with Python 3.
+# It's useful for writing loops. Here are more examples:
+print("Loop over range(4)")
+for x in range(4):
+    print(x)
+
+print("Loop over range(1,4)")
+for x in range(1, 4):
+    print(x)
+
+print("Loop over range(0,100,10)")
+for x in range(0, 100, 10):
+    print(x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
