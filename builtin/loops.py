@@ -99,17 +99,18 @@ for x in range(attempts, 0, -1):
     print(x, "attempts remaining.")
 
     name = input("What is your name? ")
-    if name != 'Sam':
+    if name != "Sam":
         continue
 
     password = input("What is your password? ")
-    if password == 'huajiao':
+    if password == "huajiao":
         print("你好老师")
         break
 
 if not attempts:
     print("Access denied.")
     import sys
+
     sys.exit()
 
 

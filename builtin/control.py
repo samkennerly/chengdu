@@ -4,7 +4,6 @@ This chapter uses Booleans. Many of us call them "bools".
 A bool can be True or False. It can't have any other value.
 """
 
-
 ## Comparisons
 
 
@@ -31,7 +30,6 @@ print("14 == '十四'", 14 == "十四")
 print("'Sam' == 'Sam'", "Sam" == "Sam")
 print("'Sam' == 'sam'", "Sam" == "sam")
 print("'Sam' == 'Samuel'", "Sam" == "Samuel")
-
 
 
 ## Logic operators
