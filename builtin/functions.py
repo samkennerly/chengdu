@@ -76,14 +76,16 @@ print("type(None) is", type(None))
 # Kwargs are often used for optional inputs.
 # In this example, 'name' is a kwarg with default value None.
 
+
 def say_goodbye(name=None):
     if name is None:
         print("再见")
     else:
         print("再见" + name)
 
-say_goodbye(name = "Ada Lovelace")
-say_goodbye(name = "Charles Babbage")
+
+say_goodbye(name="Ada Lovelace")
+say_goodbye(name="Charles Babbage")
 say_goodbye()
 
 
@@ -94,7 +96,3 @@ say_goodbye()
 
 print("Ada", "Charles", "Guido")
 print("Ada", "Charles", "Guido", sep=" & ")
-
-
-
-
