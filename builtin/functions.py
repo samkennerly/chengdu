@@ -60,11 +60,11 @@ print("The mean of 1.5 and 2.5 is", mean(1.5, 2.5))
 # If we write a function with no 'return' statement,
 # then Python will assume we meant 'return None'.
 
-z = mean(0, 100)
-print("mean(0, 100) returned", z)
+spam = mean(0, 100)
+print("mean(0, 100) returned", spam)
 
-s = say_hello_to("Sam")
-print("say_hello_to('Sam') returned", s)
+spam = hello()
+print("hello() returned", spam)
 
 
 # None is a special object with its own type.
