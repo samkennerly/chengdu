@@ -38,8 +38,10 @@ def mean(x, y):
     return (x + y) / 2
 
 
-print("The mean of 0 and 100 is", mean(0, 100))
 print("The mean of -1 and 1 is", mean(-1, 1))
+print("The mean of 0 and 100 is", mean(0, 100))
+for x in range(10):
+    print("The mean of 0 and", x, "is", mean(1, x))
 
 
 # I did not tell Python what type x and y should be.
