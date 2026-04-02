@@ -5,12 +5,11 @@ Review of loops from Chapter 3.
 # while loops
 
 # I copypasted this example from page 50 in the textbook.
-# Then I added one line. It's legal because it's open-source!
+# It's legal because it's open-source!
 spam = 0
 while spam < 5:
     print("Hello, world!")
     spam = spam + 1
-    print("This loop ran", spam, "times.")
 
 # This is an "infinite" loop. If the user does not give the
 # answer we expect, then it will loop again and again until
@@ -46,3 +45,19 @@ while True:
 answer = ""
 while not answer:
     answer = input("What is your favorite color? ")
+
+
+# for loops
+
+# Here are two loops that do the same thing.
+# I prefer the "for loop" because I don't need to type 'x += 1'.
+# (If I forget that line, then the while loop will be infinite!)
+x = 1
+while x < 4:
+    print("This while loop ran", x, "times.")
+    x += 1
+
+for x in range(1, 4):
+    print("This for loop ran", x, "times.")
+
+
