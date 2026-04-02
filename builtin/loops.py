@@ -1,8 +1,4 @@
-"""
-Review of loops from Chapter 3.
-"""
-
-## while loops
+# Review of loops from Chapter 3.
 
 
 # I copypasted this example from page 50 in the textbook.
@@ -51,9 +47,6 @@ while True:
 answer = ""
 while not answer:
     answer = input("What is your favorite color? ")
-
-
-## for loops
 
 
 # Here are two loops that do the same thing.

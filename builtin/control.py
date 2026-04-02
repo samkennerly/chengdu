@@ -1,10 +1,6 @@
-"""
-Review of flow control from Chapter 2.
-This chapter uses Booleans. Many of us call them "bools".
-A bool can be True or False. It can't have any other value.
-"""
-
-## Comparisons
+# Review of flow control from Chapter 2.
+# This chapter uses Booleans. Many of us call them "bools".
+# A bool can be True or False. It can't have any other value.
 
 
 # (x == y) works a bit like 是不是.
@@ -32,9 +28,6 @@ print("'Sam' == 'sam'", "Sam" == "sam")
 print("'Sam' == 'Samuel'", "Sam" == "Samuel")
 
 
-## Logic operators
-
-
 # (x and y) examples
 
 print("(True and True) is", True and True)
@@ -51,9 +44,6 @@ print("(False or True) is", False or True)
 print("(False or False) is", False or False)
 
 
-## Negations
-
-
 # (not x) is the opposite of x's truth value.
 
 print("(not True) is", not True)
@@ -64,9 +54,6 @@ print("(not False) is", not False)
 
 print("14 != 14", 14 != 14)
 print("14 != 44", 14 != 44)
-
-
-## Using conditions to control programs
 
 
 # 'if' statements are common in many languages.
@@ -99,9 +86,6 @@ elif language == "中文":
     print("你好世界！")
 else:
     print("I'm sorry. I can't speak", language)
-
-
-## Truthy and Falsey values
 
 
 # Python can convert many types of values into bools.

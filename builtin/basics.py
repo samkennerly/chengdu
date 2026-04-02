@@ -1,8 +1,5 @@
-"""
-Review of Python basics from Chapter 1.
-If you forgot everything over spring break,
-this might help to refresh your memory.
-"""
+# Review of Python basics from Chapter 1.
+
 
 # Say hello
 
