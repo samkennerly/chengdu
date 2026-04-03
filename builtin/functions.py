@@ -8,6 +8,15 @@
 
 from math import sqrt
 
+# Variables defined outside all functions (and classes) are
+# called "global variables". Any code in this .py file can
+# use this 'planet' variable. It is never out of scope.
+# This variable is global, and its name is CAPITALIZED.
+# That tells other programmers "This variable is global, and
+# I want it to be constant. Please do not mutate it."
+
+PLANET = "地球"
+
 
 # I copypasted this function from page 73, then changed it.
 # This function does not accept any inputs.
@@ -45,6 +54,7 @@ def mean(x, y):
     # Average of two numbers.
     return (x + y) / 2
 
+
 for x in range(10):
     print("The mean of 0 and", x, "is", mean(1, x))
 
@@ -59,7 +69,6 @@ print("The mean of 1.5 and 2.5 is", mean(1.5, 2.5))
 # If we input the wrong types, Python will still try to call the
 # mean() function. It will raise an error and crash.
 # print("The mean of '一' and '三' is", mean("一", "三"))
-
 
 
 # Python functions always return something.
@@ -120,26 +129,21 @@ except NameError as err:
     print("Error!", err)
 
 
-# Variables defined outside all functions (and classes) are
-# called "global variables". Any code in this .py file can
-# use this 'planet' variable. It is never out of scope.
-
-planet = "地球"
-
-def i_am_from(location):
-    print("我是", planet, location, "人", sep="")
-
-i_am_from("美国")
-
-
 # Programmers use scope to prevent our functions from reading
 # or mutating variables inside other functions.
 # The 'location' variable in this function is not the same as
 # the 'location' variable in any other function.
 
-def i_am_in(location):
-    print("我在", planet, location, sep="")
 
+def i_am_from(location):
+    print("我是", PLANET, location, "人", sep="")
+
+
+def i_am_in(location):
+    print("我在", PLANET, location, sep="")
+
+
+i_am_from("美国")
 i_am_in("中国")
 
 
@@ -147,9 +151,11 @@ i_am_in("中国")
 # well. For complicated tasks, they write functions that call
 # other functions. This is called "composition."
 
+
 def euclid(*args):
     # Given a vector's components, find its Euclidean norm.
     return sqrt(sum(x * x for x in args))
+
 
 print("The Eucliean norm of (3, 4) is", euclid(3, 4))
 print("The Euclidean norm of (1, 2, 1) is", euclid(1, 2, 1))
