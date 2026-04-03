@@ -1,6 +1,6 @@
 # Review of functions from Chapter 4
 
-# All 'import' statements should be near the top of a .py file.
+# All import statements should be near the top of a .py file.
 # If we need to know what packages a .py file needs, we don't
 # want to scroll through many lines of code to find them.
 # This line imports the 'sqrt' function from the 'math' package.
@@ -8,12 +8,12 @@
 
 from math import sqrt
 
+# All global constants should be near the top of a .py file.
 # Variables defined outside all functions (and classes) are
-# called "global variables". Any code in this .py file can
-# use this 'planet' variable. It is never out of scope.
-# This variable is global, and its name is CAPITALIZED.
-# That tells other programmers "This variable is global, and
-# I want it to be constant. Please do not mutate it."
+# called "globals." Any code in this .py file can use them.
+# Python doesn't really have constants, but we do have a
+# convention: if a variable name is CAPITALIZED, it means
+# "I'm using this as a constant. Please do not mutate it."
 
 PLANET = "地球"
 
@@ -23,7 +23,7 @@ PLANET = "地球"
 
 
 def hello():
-    # Prints three greetings
+    # Print three greetings.
     print("早上好")
     print("下午好")
     print("晚上好")
@@ -37,7 +37,7 @@ hello()
 
 
 def say_hello_to(name):
-    # Prints three greetings to the name provided
+    # Print three greetings to the name provided.
     print("早上好 " + name)
     print("下午好 " + name)
     print("晚上好 " + name)
@@ -90,13 +90,28 @@ print("hello() returned", spam)
 print("type(None) is", type(None))
 
 
-# Some functions accept 'named parameters' as input.
+# We can define functions with an unknown number of args:
+
+def say_hello_to_all(*args):
+    # Print three greetings to the names provided.
+    for name in args:
+        print("早上好 " + name)
+        print("下午好 " + name)
+        print("晚上好 " + name)
+
+
+say_hello_to_all("Ada", "Charles", "Guido", "Sam")
+
+
+# Functions can also accept 'named parameters' as input.
 # These are also called 'keyword arguments' or 'kwargs'.
 # Kwargs are often used for optional inputs.
 # In this example, 'name' is a kwarg with default value None.
 
 
 def say_goodbye(name=None):
+    # Print a goodbye message to the name provided.
+    # If no name is input, print a generic goodbye.
     if name is None:
         print("再见")
     else:
@@ -115,6 +130,18 @@ say_goodbye()
 
 print("Ada", "Charles", "Guido")
 print("Ada", "Charles", "Guido", sep=" & ")
+
+
+# SUPER BONUS PROBLEM FOR BORED PEOPLE
+# What does this function do? Why would anyone do this?
+
+def show_kwargs(**kwargs):
+    # ??? useless mystery function ???
+    print("type(kwargs) is", type(kwargs))
+    for key, value in kwargs.items():
+        print(key, ":", value)
+
+show_kwargs(teacher="Ada", student="Sam")
 
 
 # If we define a variable inside a function, then that variable
@@ -136,10 +163,12 @@ except NameError as err:
 
 
 def i_am_from(location):
+    # Tell people where I come from.
     print("我是", PLANET, location, "人", sep="")
 
 
 def i_am_in(location):
+    # Tell people where I am now.
     print("我在", PLANET, location, sep="")
 
 
@@ -158,4 +187,4 @@ def euclid(*args):
 
 
 print("The Eucliean norm of (3, 4) is", euclid(3, 4))
-print("The Euclidean norm of (1, 2, 1) is", euclid(1, 2, 1))
+print("The Euclidean norm of (1, 2, 3) is", euclid(1, 2, 3))
