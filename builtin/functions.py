@@ -92,6 +92,7 @@ print("type(None) is", type(None))
 
 # We can define functions with an unknown number of args:
 
+
 def say_hello_to_all(*args):
     # Print three greetings to the names provided.
     for name in args:
@@ -135,11 +136,13 @@ print("Ada", "Charles", "Guido", sep=" & ")
 # SUPER BONUS PROBLEM FOR BORED PEOPLE
 # What does this function do? Why would anyone do this?
 
+
 def show_kwargs(**kwargs):
     # ??? useless mystery function ???
     print("type(kwargs) is", type(kwargs))
     for key, value in kwargs.items():
         print(key, ":", value)
+
 
 show_kwargs(teacher="Ada", student="Sam")
 
