@@ -127,7 +127,9 @@ VSCode has its own custom REPL. Here's hot to run it:
 ### create a virtual environment
 
 - Create a file called `requirements.txt`.
+
 - Copy everything from [requirements.txt] into that file.
+
 - Create a file called `xiongmao.py`. Add this to the file:
 ```
 # Check if pandas is installed
@@ -136,9 +138,11 @@ import pandas as pd
 
 pd.show_versions()
 ```
+
 - In the far-left sidebar, find the Python logo and click it.
 (It looks like the Python logo two cartoon snakes.)
 This should open the `Python Environments` view.
+
 - **Caution:** My VSCode had no `Python Environments` view.
 This is a bug caused by [VSCode issue 581]:
 <blockquote>
@@ -150,7 +154,18 @@ Note: The Python Environments icon may no longer appear in the Activity Bar due 
   - Search for `python.useEnvironmentsExtension`.
   - Click `Enables the Python environments extension.`
 
-If you can see the `Python Environments` view,
+- **Caution:** My VSCode automatically installed many packages
+to my Python installation and broke it. Here's how to undo that:
+  - In the second-to-left sidebar, find `ENVIRONMENT MANAGERS`.
+  - Find the Python version that VSCode modified.
+  - Right click it and select `Delete environment`.
+  - Open a Terminal and run this command:
+  ```
+  pip uninstall -y -r <(pip freeze)
+  ```
+
+- In the second-to-farthest-left sidebar,
+find `ENVIRONMENT MANAGERS`.
 
 
 [requirements.txt]: requirements.txt
