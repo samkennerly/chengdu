@@ -139,7 +139,8 @@ pd.show_versions()
 - In the far-left sidebar, find the Python logo and click it.
 (It looks like the Python logo two cartoon snakes.)
 This should open the `Python Environments` view.
-- **Caution:** My VSCode had no `Python Environments` view.
+
+**Caution:** My VSCode had no `Python Environments` view.
 This is a bug caused by [VSCode issue 581]:
 <blockquote>
 Note: The Python Environments icon may no longer appear in the Activity Bar due to the ongoing rollout of the Python Environments extension. To restore the extension, add "python.useEnvironmentsExtension": true to your User settings. This setting is temporarily necessary until the rollout is complete!
@@ -150,8 +151,9 @@ Here's the workaround I used:
   - Search for `python.useEnvironmentsExtension`.
   - Click `Enables the Python environments extension.`
 
-- **Caution:** My VSCode automatically installed many packages
+**Caution:** My VSCode automatically installed many packages
 to my Python installation and broke it. Here's how to undo that:
+
   - In the second-to-left sidebar, find `ENVIRONMENT MANAGERS`.
   - Find the Python version that VSCode modified.
   - Right click it and select `Delete environment`.
