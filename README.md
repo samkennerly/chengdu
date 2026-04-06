@@ -47,27 +47,39 @@ For example, it might look like this:
 C:\Users\lenovo\code\chengdu
 ```
 If you have `git` installed, then you can [clone] this repo.
-You'll have your own personal copy of all the files,
-all of my edits, and all of my mistakes.
+You'll have a copy of all the files, my edits, and my mistakes.
 
 [clone]: https://git-scm.com/docs/git-clone
 
 
 ## install dependencies
 
-To install everything
+The `mkvenv` file explains how to create a [virtual environment]
+and install all required packages.
+
+`mkvenv` is a [shell script].
+On any [POSIX] operating system (Linux, BSD, macOS, 麒麟, etc.),
+you can run it with this command:
+```
+./mkvenv
+```
+
+[virtual environment]: https://docs.python.org/3/library/venv.html
+[shell script]: https://www.dotlinux.net/linux-shell-scripting-tutorial/
+[POSIX]: https://www.baeldung.com/linux/posix
 
 
-[shell script]:
+## extra steps for VSCode users
 
-
-
-## VSCode (Visual Studio Code) notes
-
-The official VSCode docs are here:
+"VSCode" is a short name for an [IDE] called
+_Microsoft Visual Studio Code_. The docs are here:
 ```
 https://code.visualstudio.com/docs/python/run
 ```
+**Caution:** The official docs are often wrong.
+
+[IDE]: https://github.com/resources/articles/what-is-an-ide
+
 
 ### start a blank project
 
