@@ -25,7 +25,6 @@ The official VSCode docs are here:
 https://code.visualstudio.com/docs/python/run
 ```
 
-
 ### start a blank project
 
 - Launch VSCode.
@@ -42,8 +41,6 @@ print("Hello, World!")
 - Search for `Python: Select Interpreter` and select it.
 - Choose a Python interpreter or press ESC to close the popup.
 - Click the ▶ button to run `hello.py`.
-
-
 
 ### run the Python REPL in VSCode
 
