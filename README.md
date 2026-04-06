@@ -86,8 +86,7 @@ The docs for deleting virtual environments are here:
 ```
 https://code.visualstudio.com/docs/python/environments#_delete-environments
 ``
-
-**Caution:** All of these docs are incorrect.
+[IDE]: https://github.com/resources/articles/what-is-an-ide
 
 
 ### create a file
@@ -99,7 +98,7 @@ https://code.visualstudio.com/docs/python/environments#_delete-environments
 - Enter the name of the file you want to create.
 - Press CTRL-S to save the file.
 
-[IDE]: https://github.com/resources/articles/what-is-an-ide
+
 
 
 ### run a Python script
