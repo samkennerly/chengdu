@@ -127,9 +127,7 @@ VSCode has its own custom REPL. Here's hot to run it:
 ### create a virtual environment
 
 - Create a file called `requirements.txt`.
-
 - Copy everything from [requirements.txt] into that file.
-
 - Create a file called `xiongmao.py`. Add this to the file:
 ```
 # Check if pandas is installed
@@ -138,11 +136,9 @@ import pandas as pd
 
 pd.show_versions()
 ```
-
 - In the far-left sidebar, find the Python logo and click it.
 (It looks like the Python logo two cartoon snakes.)
 This should open the `Python Environments` view.
-
 - **Caution:** My VSCode had no `Python Environments` view.
 This is a bug caused by [VSCode issue 581]:
 <blockquote>
