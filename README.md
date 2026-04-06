@@ -12,26 +12,6 @@ The **science** folder contains [Jupyter notebooks]. These require extra Python 
 [packages]: https://packaging.python.org/
 
 
-## links
-
-For detailed information, see these links:
-
-- class textbook
-https://automatetheboringstuff.com/
-- python functions
-https://docs.python.org/3/library/functions.html
-- numpy basics
-https://numpy.org/doc/stable/user/absolute_beginners.html
-- scipy tutorial
-https://docs.scipy.org/doc/scipy/tutorial
-- pandas user guide
-https://pandas.pydata.org/docs/user_guide
-- seaborn examples
-https://seaborn.pydata.org/examples/
-- scikit-learn user guide
-https://scikit-learn.org/stable/user_guide.htm
-
-
 ## choose a project folder
 
 First, decide where you want to save this project.
@@ -55,21 +35,38 @@ You'll have a copy of all the files, my edits, and my mistakes.
 ## install dependencies
 
 The `mkvenv` file explains how to create a [virtual environment]
-and install all required packages.
-
-On my computer, the command to run Python 3 is `python3`.
-On some computers, it's `python` without the `3`.
-
-`mkvenv` is a [shell script].
+and install all required packages. `mkvenv` is a [shell script].
 On any [POSIX] operating system (Linux, BSD, macOS, 麒麟, etc.),
 you can run it by entering this command in a terminal:
 ```
 ./mkvenv
 ```
 
+**Caution:** On my computer, the command to run Python 3 is `python3`. On some computers, it's `python` without the `3`.
+
 [virtual environment]: https://docs.python.org/3/library/venv.html
 [shell script]: https://www.dotlinux.net/linux-shell-scripting-tutorial/
 [POSIX]: https://www.baeldung.com/linux/posix
+
+
+## links for self-study
+
+If you want to know more, see these links:
+
+- class textbook
+https://automatetheboringstuff.com/
+- python functions
+https://docs.python.org/3/library/functions.html
+- numpy basics
+https://numpy.org/doc/stable/user/absolute_beginners.html
+- scipy tutorial
+https://docs.scipy.org/doc/scipy/tutorial
+- pandas user guide
+https://pandas.pydata.org/docs/user_guide
+- seaborn examples
+https://seaborn.pydata.org/examples/
+- scikit-learn user guide
+https://scikit-learn.org/stable/user_guide.htm
 
 
 ## extra steps for VSCode users
