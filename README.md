@@ -74,29 +74,40 @@ you can run it by entering this command in a terminal:
 
 ## extra steps for VSCode users
 
-_VSCode_ is a short name for an [IDE] called
-_Microsoft Visual Studio Code_. The docs are here:
+**VSCode** is a short name for an [IDE] called
+_Microsoft Visual Studio Code_.
+
+The docs for running Python scripts are here:
 ```
 https://code.visualstudio.com/docs/python/run
 ```
-**Caution:** The official docs are often wrong.
 
-[IDE]: https://github.com/resources/articles/what-is-an-ide
+The docs for creating virtual environments are here:
+```
+https://code.visualstudio.com/docs/python/environments
+```
 
 
-### start a blank project
+### open this project and create a file
 
 - Launch VSCode.
 - In the File menu, click `Open folder`.
 - Select your project folder. (Mine is `~/code/chengdu`.)
-- In the `EXPLORER` sidebar, right-click and choose `New file`.
-- Create a file called `hello.py`. Add these lines to the file:
+- On the left sidebar, under the word `EXPLORER`, right-click and choose `New file`.
+- Enter the name of the file you want to create.
+- Press CTRL-S to save the file.
+
+[IDE]: https://github.com/resources/articles/what-is-an-ide
+
+
+### run a Python script
+
+- Create a file called `hello.py`. Add this to the file:
 ```
 # First program
 print("Hello, World!")
 ```
-- Click CTRL-S to save `hello.py`.
-- Click CTRL-SHIFT-P to open the Command Palette.
+- Press CTRL-SHIFT-P to open the Command Palette.
 - Search for `Python: Select Interpreter` and select it.
 - Choose a Python interpreter or press ESC to close the popup.
 - Click the ▶ button to run `hello.py`.
@@ -105,13 +116,45 @@ print("Hello, World!")
 
 **REPL** is Python's _Read-Evaluate-Print-Loop_.
 It's what you see when you run `python` or `python3`.
-Here's how to run the REPL in VSCode:
+VSCode has its own custom REPL. Here's hot to run it:
 
-- Click CTRL-SHIFT-P (Mac: command-shift-p) to open the Command Palette.
-- Search for `Python: Start Native Python REPL` and select it. This should open a new tab called `Python REPL`.
+- Launch VSCode.
+- Press CTRL-SHIFT-P to open the Command Palette.
+- Search for `Python: Start Native Python REPL` and select it.
+- This should open a new tab called `Python REPL`.
 - Enter `2 + 2` and press Enter. It should return 4.
 
+### create a virtual environment
 
+- Create a file called `requirements.txt`.
+- Copy everything from [requirements.txt] into that file.
+- Create a file called `xiongmao.py`. Add this to the file:
+```
+# Check if pandas is installed
+
+import pandas as pd
+
+pd.show_versions()
+```
+- In the far-left sidebar, find the Python logo and click it.
+(It looks like the Python logo two cartoon snakes.)
+This should open the `Python Environments` view.
+
+**Caution:** My VSCode had no `Python Environments` view.
+This is a bug caused by [VSCode issue 581]:
+```
+Note: The Python Environments icon may no longer appear in the Activity Bar due to the ongoing rollout of the Python Environments extension. To restore the extension, add "python.useEnvironmentsExtension": true to your User settings. This setting is temporarily necessary until the rollout is complete!
+```
+Here's the workaround I used:
+- In the `Code` menu, choose `Settings`, then `Settings`.
+- Search for `python.useEnvironmentsExtension`.
+- Click `Enables the Python environments extension.`
+
+If you can see the `Python Environments` view,
+
+
+[requirements.txt]: requirements.txt
+[VSCode issue 581]: https://github.com/microsoft/vscode-python-environments/issues/581
 
 
 
