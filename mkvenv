@@ -8,7 +8,7 @@ python3 -m venv .venv
 python3 -m pip install --upgrade pip
 
 # Install everything in requirements.txt
-python3 -m pip install -r requirements.txt
+python3 -m pip install -r science/requirements.txt
 
 # Show installed packages
 python3 -m pip list
