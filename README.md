@@ -153,8 +153,8 @@ Here's the workaround I used:
   - Search for `python.useEnvironmentsExtension`.
   - Click `Enables the Python environments extension.`
 
-**Caution:** My VSCode automatically installed many packages
-to my Python installation and broke it. Here's how to undo that:
+**Caution:** My VSCode automatically installed packages to my
+my clean Python environment and broke it. Here's how I fixed it:
 
   - In the second-to-left sidebar, find `ENVIRONMENT MANAGERS`.
   - Find the Python version that VSCode modified.
@@ -163,6 +163,8 @@ to my Python installation and broke it. Here's how to undo that:
   ```
   pip uninstall -y -r <(pip freeze)
   ```
+
+If you can see the `Python Environments` view,
 
 - Press CTRL-SHIFT-P to open the Command Palette.
 - Search for `Python: Create Environment` and select it.
@@ -175,9 +177,7 @@ to my Python installation and broke it. Here's how to undo that:
   ```
   Select a Python Environment
   ```
-  **Caution:** This prompt is a VSCode bug. The options shown
-  are Python interpreters, not python environments.
-- Choose any recent Python version.
+- The options VSCode shows are Python versions, not python environments. Choose any recent Python version.
 - VSCode should show this prompt:
   ```
   Enter a name for the virtual environment
