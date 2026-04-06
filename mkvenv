@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 # Create and update a virtual environment
 
-# Use the same names as the textbook
+# Name the virtual environment "venv".
+# Store its files in the ".venv" folder.
 python3 -m venv .venv
 
 # Upgrade pip (Python's package installer)
