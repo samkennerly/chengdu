@@ -81,14 +81,19 @@ The docs for running Python scripts are here:
 ```
 https://code.visualstudio.com/docs/python/run
 ```
-
 The docs for creating virtual environments are here:
 ```
 https://code.visualstudio.com/docs/python/environments
 ```
+The docs for deleting virtual environments are here:
+```
+https://code.visualstudio.com/docs/python/environments#_delete-environments
+``
+
+**Caution:** All of these docs are incorrect.
 
 
-### open this project and create a file
+### create a file
 
 - Launch VSCode.
 - In the File menu, click `Open folder`.
@@ -162,8 +167,36 @@ to my Python installation and broke it. Here's how to undo that:
   pip uninstall -y -r <(pip freeze)
   ```
 
-- In the second-to-farthest-left sidebar,
-find `ENVIRONMENT MANAGERS`.
+- Press CTRL-SHIFT-P to open the Command Palette.
+- Search for `Python: Create Environment` and select it.
+- VSCode should show this prompt:
+  ```
+  Select an environment manager
+  ```
+- Choose `venv`.
+- VSCode should show this prompt:
+  ```
+  Select a Python Environment
+  ```
+  **Caution:** This prompt is a VSCode bug. The options shown
+  are Python interpreters, not python environments.
+- Choose any recent Python version.
+- VSCode should show this prompt:
+  ```
+  Enter a name for the virtual environment
+  ```
+- Enter `.venv`.
+- VSCode should show a menu. Select this option:
+  ```
+  Install project dependencies
+  ```
+  Find your project folder and choose `requirements.txt`.
+
+**Caution:** This menu might not appear if you have created
+one or more environment(s), or if VSCode has automatically one or more created environment(s), or if VSCode had automatically detected one or more environments.
+
+
+
 
 
 [requirements.txt]: requirements.txt
@@ -171,7 +204,7 @@ find `ENVIRONMENT MANAGERS`.
 
 
 
-
+## run jupyter notebooks
 
 
 
