@@ -2,9 +2,9 @@
 
 This [git repo] contains examples for class.
 
-The *builtin* folder contains Python scripts which can be run with Python's [builtin] functions and libraries.
+The **builtin** folder contains Python scripts which can be run with Python's [builtin] functions and libraries.
 
-The *science* folder contains [Jupyter notebooks]. These require extra Python [packages] listed in `requirements.txt`.
+The **science** folder contains [Jupyter notebooks]. These require extra Python [packages] listed in `requirements.txt`.
 
 [git repo]: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#ch02-git-basics-chapter
 [builtin]: https://docs.python.org/
@@ -16,10 +16,10 @@ The *science* folder contains [Jupyter notebooks]. These require extra Python [p
 
 For detailed information, see these links:
 
-class textbook
+- class textbook
 https://automatetheboringstuff.com/
 
-python functions
+- python functions
 https://docs.python.org/3/library/functions.html
 
 numpy basics
