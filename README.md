@@ -74,8 +74,6 @@ https://scikit-learn.org/stable/user_guide.htm
 **VSCode** is a short name for an [IDE] called
 _Microsoft Visual Studio Code_.
 
-[IDE]: https://github.com/resources/articles/what-is-an-ide
-
 
 The docs for running Python scripts are here:
 ```
@@ -88,8 +86,9 @@ https://code.visualstudio.com/docs/python/environments
 The docs for deleting virtual environments are here:
 ```
 https://code.visualstudio.com/docs/python/environments#_delete-environments
-``
+```
 
+[IDE]: https://github.com/resources/articles/what-is-an-ide
 
 ### create a file
 
