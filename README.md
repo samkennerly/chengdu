@@ -18,25 +18,18 @@ For detailed information, see these links:
 
 - class textbook
 https://automatetheboringstuff.com/
-
 - python functions
 https://docs.python.org/3/library/functions.html
-
-numpy basics
+- numpy basics
 https://numpy.org/doc/stable/user/absolute_beginners.html
-
-scipy tutorial
+- scipy tutorial
 https://docs.scipy.org/doc/scipy/tutorial
-
-pandas user guide
+- pandas user guide
 https://pandas.pydata.org/docs/user_guide
-
-seaborn examples
+- seaborn examples
 https://seaborn.pydata.org/examples/
-
-scikit-learn user guide
+- scikit-learn user guide
 https://scikit-learn.org/stable/user_guide.htm
-
 
 
 ## choose a project folder
