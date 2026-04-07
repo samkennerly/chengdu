@@ -74,7 +74,6 @@ https://scikit-learn.org/stable/user_guide.htm
 **VSCode** is a short name for an [IDE] called
 _Microsoft Visual Studio Code_.
 
-
 The docs for running Python scripts are here:
 ```
 https://code.visualstudio.com/docs/python/run
@@ -98,9 +97,6 @@ https://code.visualstudio.com/docs/python/environments#_delete-environments
 - On the left sidebar, under the word `EXPLORER`, right-click and choose `New file`.
 - Enter the name of the file you want to create.
 - Press CTRL-S to save the file.
-
-
-
 
 ### run a Python script
 
@@ -130,14 +126,6 @@ VSCode has its own custom REPL. Here's hot to run it:
 
 - Create a file named `requirements.txt`.
 - Copy everything from [requirements.txt] into that file.
-- Create a file named `xiongmao.py`. Add this to the file:
-```
-# Check if pandas is installed
-
-import pandas as pd
-
-pd.show_versions()
-```
 - In the far-left sidebar, find the Python logo and click it.
 (It looks like the Python logo two cartoon snakes.)
 This should open the `Python Environments` view.
@@ -160,45 +148,85 @@ my clean Python environment and broke it. Here's how I fixed it:
   - Find the Python version that VSCode modified.
   - Right click it and select `Delete environment`.
   - Open a Terminal and run this command:
-  ```
-  pip uninstall -y -r <(pip freeze)
-  ```
+```
+pip uninstall -y -r <(pip freeze)
+```
 
 If you can see the `Python Environments` view,
 
 - Press CTRL-SHIFT-P to open the Command Palette.
 - Search for `Python: Create Environment` and select it.
 - VSCode should show this prompt:
-  ```
-  Select an environment manager
-  ```
+```
+Select an environment manager
+```
 - Choose `venv`.
 - VSCode should show this prompt:
-  ```
-  Select a Python Environment
-  ```
+```
+Select a Python Environment
+```
 - The options VSCode shows are Python versions, not python environments. Choose any recent Python version.
 - VSCode should show this prompt:
-  ```
-  Enter a name for the virtual environment
-  ```
+```
+Enter a name for the virtual environment
+```
 - Enter `.venv`.
 - VSCode should show a popup. Select this option:
-  ```
-  Install project dependencies
-  ```
-**Caution:** This menu might not appear if you have created
-one or more environment(s), or if VSCode has automatically one or more created environment(s), or if VSCode had automatically detected one or more environments.
-
-
+```
+Install project dependencies
+```
 - VSCode should show a popup. Select this option:
-  ```
-  requirements.txt
-  ```
+```
+requirements.txt
+```
 - Wait for VSCode to install packages.
-- Click on the `xiongmao.py` tab.
-- Click the ▶ button to run `xiongmao.py`.
 
+[requirements.txt]: requirements.txt
+[VSCode issue 581]: https://github.com/microsoft/vscode-python-environments/issues/581
+
+## choose a Python environment
+
+When you run a script, VSCode automatically decides which Python environment to use. When it's wrong, this is how I fix it:
+
+- In the bottom-right corner of the VSCode window, look for some text like this:
+```
+Python .venv (3.14.2)
+```
+
+**Caution:** VSCode automatically removed this on my machine.
+To fix it, right-click on any empty space in the `Status Bar`
+(it's the bar at the far bottom of the screen)
+and click `Python interpreter`.
+
+- Click on the version number (Mine is `3.14.2`. Yours might be different) to open a popup. Select the environment you want.
+
+
+## run jupyter notebooks
+
+- On the far-left of the VSCode window, find the `EXTENSIONS` view. (It's the icon that looks like four squares.)
+
+**Caution:** Do not click `Install`. By default, VSCode installs a recent Jupyter extension which does not work.
+
+- Search for `Jupyter` and right-click it.
+- Chose `Install specific version.`
+- Search for `2025.4.1` and select it.
+- Wait for VSCode to install its Jupyter extension.
+- On the far-left of the VSCode window, find the `EXPLORER` view. (It's the icon that looks like sheets of paper.)
+- Create a file named `hello.ipynb`.
+- In the `hello.ipynb` tab, click `+ Code` to add a new cell.
+- Enter this code:
+```
+import pandas as pd
+
+pd.show_versions()
+```
+- Click the `▶ RunAll` button.
+- A popup should appear with this prompt:
+```
+Select kernel for 'hello.ipynb'
+```
+- Choose `.venv`.
+- You should see this under the cell:
 If it worked, you should see seomthing like this in the terminal:
 ```
 INSTALLED VERSIONS
@@ -221,57 +249,4 @@ numpy                 : 2.4.4
 ...
 ```
 The output will be different on different machines. That's OK!
-
-[requirements.txt]: requirements.txt
-[VSCode issue 581]: https://github.com/microsoft/vscode-python-environments/issues/581
-
-
-## choose a Python environment
-
-When you run a script, VSCode automatically decides which Python environment to use. When it chooses the wrong environment,
-this is how I fix it:
-
-In the bottom-right corner of the VSCode window, look for some text like this:
-```
-Python .venv (3.14.2)
-```
-
-**Caution:** VSCode automatically removed this on my machine. To fix it, right-click on any empty space in the `Status Bar` (it's the bar at the far bottom of the screen) and click `Python interpreter`.
-
-Click on the version number (Mine is `3.14.2`. Yours might be different) to open a popup. Select the environment you want.
-
-
-## run jupyter notebooks
-
-- On the far-left of the VSCode window, find the `EXTENSIONS` view. (It's the icon that looks like four squares.)
-
-**Caution:** Do not click `Install`. By default, VSCode installs a recent Jupyter extension which does not work.
-
-- Search for `Jupyter` and right-click it.
-- Chose `Install specific version.`
-- Search for `2025.4.1` and select it.
-- Wait for VSCode to install its Jupyter extension.
-- On the far-left of the VSCode window, find the `EXPLORER` view. (It's the icon that looks like sheets of paper.)
-- Create a file named `hello.ipynb`.
-- In the `hello.ipynb` tab, click `+ Code` to add a new cell.
-- Enter this code:
-```
-"Hello, world!"
-```
-- Click the `▶ RunAll` button.
-- A popup should appear with this prompt:
-```
-Select kernel for 'hello.ipynb'
-```
-- Choose `.venv`.
-- You should see this under the cell:
-```
-'Hello, world!'
-```
-
-
-
-
-
-
-
+The most important thing is: you have `pandas`.
