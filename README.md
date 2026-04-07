@@ -1,5 +1,6 @@
 # chengdu
 
+
 This [git repo] contains examples for class.
 
 The **builtin** folder contains Python scripts which can be run with Python's
@@ -42,6 +43,7 @@ you can run it by opening a terminal and running this command:
 ```
 ./mkvenv
 ```
+
 If you use Windows (or you like doing things yourself),
 open `mkvenv` in a text editor, read it, and run the commands.
 
@@ -52,6 +54,7 @@ To activate the virtual environment, run this:
 ```
 source .venv/bin/activate
 ```
+
 You should see `(.venv)` next to your prompt.
 For example, mine looks like this:
 ```
@@ -62,6 +65,7 @@ To launch a [Jupyter server], run this:
 ```
 jupyter notebook
 ```
+
 Follow the instructions on screen. (On some computers, you don't need to do anything. Jupyter opens itself in a browser.)
 In your browser, click `New` and choose `Python 3 (ipykernel)`.
 Type this code and click the `▶` button:
@@ -70,6 +74,7 @@ import pandas as pd
 
 pd.show_versions()
 ```
+
 If everything works, you should see something like this:
 ```
 INSTALLED VERSIONS
@@ -91,6 +96,7 @@ pandas                : 3.0.2
 numpy                 : 2.4.4
 ...
 ```
+
 The output will be different on different computers. That's OK!
 
 To stop Jupyter, click on the terminal and press CTRL-C.
@@ -98,6 +104,7 @@ You should see this prompt:
 ```
 Shut down this Jupyter server (y/[n])?
 ```
+
 Enter `y`. To deactivate the environment, run:
 ```
 deactivate
@@ -114,20 +121,16 @@ deactivate
 **VSCode** is a short name for an [IDE] called
 _Microsoft Visual Studio Code_.
 
-The docs for running Python scripts are here:
-```
-https://code.visualstudio.com/docs/python/run
-```
-The docs for creating virtual environments are here:
-```
-https://code.visualstudio.com/docs/python/environments
-```
-The docs for deleting virtual environments are here:
-```
-https://code.visualstudio.com/docs/python/environments#_delete-environments
-```
+Here are some of the official VSCode docs:
 
-[IDE]: https://github.com/resources/articles/what-is-an-ide
+- run Python scripts
+https://code.visualstudio.com/docs/python/run
+
+- create virtual environments
+https://code.visualstudio.com/docs/python/environments
+
+- delete virtual environments
+https://code.visualstudio.com/docs/python/environments#_delete-environments
 
 ### create a file
 
@@ -177,17 +180,17 @@ Note: The Python Environments icon may no longer appear in the Activity Bar due 
 </blockquote>
 Here's the workaround I used:
 
-  - In the `Code` menu, choose `Settings`, then `Settings`.
-  - Search for `python.useEnvironmentsExtension`.
-  - Click `Enables the Python environments extension.`
+- In the `Code` menu, choose `Settings`, then `Settings`.
+- Search for `python.useEnvironmentsExtension`.
+- Click `Enables the Python environments extension.`
 
 **Caution:** My VSCode automatically installed packages to my
 my clean Python environment and broke it. Here's how I fixed it:
 
-  - In the second-to-left sidebar, find `ENVIRONMENT MANAGERS`.
-  - Find the Python version that VSCode modified.
-  - Right click it and select `Delete environment`.
-  - Open a Terminal and run this command:
+- In the second-to-left sidebar, find `ENVIRONMENT MANAGERS`.
+- Find the Python version that VSCode modified.
+- Right click it and select `Delete environment`.
+- Open a Terminal and run this command:
 ```
 pip uninstall -y -r <(pip freeze)
 ```
@@ -200,28 +203,31 @@ If you can see the `Python Environments` view,
 ```
 Select an environment manager
 ```
+
 - Choose `venv`. VSCode should show this prompt:
 ```
 Select a Python Environment
 ```
+
 - The options VSCode shows are Python versions,
 not python environments. Choose any recent Python version.
 VSCode should show this prompt:
 ```
 Enter a name for the virtual environment
 ```
+
 - Enter `.venv`. VSCode should show a popup. Select this:
 ```
 Install project dependencies
 ```
+
 - VSCode should show a popup. Select this:
 ```
 requirements.txt
 ```
+
 - Wait for VSCode to install packages.
 
-[requirements.txt]: requirements.txt
-[VSCode issue 581]: https://github.com/microsoft/vscode-python-environments/issues/581
 
 ### choose a Python environment
 
@@ -231,6 +237,7 @@ When you run a script, VSCode automatically decides which Python environment to 
 ```
 Python .venv (3.14.2)
 ```
+
 - Click on the version number (Mine is `3.14.2`. Yours might be different.) to open a popup. Select the environment you want.
 
 **Caution:** VSCode automatically removed this on my machine.
@@ -259,10 +266,12 @@ import pandas as pd
 
 pd.show_versions()
 ```
+
 - Click the `▶ RunAll` button. A popup should appear with this prompt:
 ```
 Select kernel for 'hello.ipynb'
 ```
+
 - Choose `.venv`. If everything worked, you should see something like this:
 ```
 INSTALLED VERSIONS
@@ -284,10 +293,14 @@ pandas                : 3.0.2
 numpy                 : 2.4.4
 ...
 ```
+
 The output will be different on different machines. That's OK!
 
-
+[IDE]: https://github.com/resources/articles/what-is-an-ide
+[requirements.txt]: requirements.txt
+[VSCode issue 581]: https://github.com/microsoft/vscode-python-environments/issues/581
 [VSCode issue 17042]: https://github.com/microsoft/vscode-jupyter/issues/17042
+
 
 ## links for self-study
 
@@ -306,4 +319,4 @@ https://pandas.pydata.org/docs/user_guide
 - seaborn examples
 https://seaborn.pydata.org/examples/
 - scikit-learn user guide
-https://scikit-learn.org/stable/user_guide.htm
+https://scikit-learn.org/
