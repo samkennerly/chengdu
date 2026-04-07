@@ -75,29 +75,7 @@ import pandas as pd
 pd.show_versions()
 ```
 
-If everything works, you should see something like this:
-```
-INSTALLED VERSIONS
-------------------
-commit                : ab90747e3dae0e69b1bdbf083820b8075689b34b
-python                : 3.14.2
-python-bits           : 64
-OS                    : Darwin
-OS-release            : 24.6.0
-Version               : Darwin Kernel Version 24.6.0: Mon Jan 19 22:01:13 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_ARM64_T8122
-machine               : arm64
-processor             : arm
-byteorder             : little
-LC_ALL                : None
-LANG                  : en_US.UTF-8
-LOCALE                : en_US.UTF-8
-
-pandas                : 3.0.2
-numpy                 : 2.4.4
-...
-```
-
-The output will be different on different computers. That's OK!
+If it runs, and you see output, then you have pandas.
 
 To stop Jupyter, click on the terminal and press CTRL-C.
 You should see this prompt:
@@ -272,29 +250,7 @@ pd.show_versions()
 Select kernel for 'hello.ipynb'
 ```
 
-- Choose `.venv`. If everything worked, you should see something like this:
-```
-INSTALLED VERSIONS
-------------------
-commit                : ab90747e3dae0e69b1bdbf083820b8075689b34b
-python                : 3.14.2
-python-bits           : 64
-OS                    : Darwin
-OS-release            : 24.6.0
-Version               : Darwin Kernel Version 24.6.0: Mon Jan 19 22:01:13 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_ARM64_T8122
-machine               : arm64
-processor             : arm
-byteorder             : little
-LC_ALL                : None
-LANG                  : en_US.UTF-8
-LOCALE                : en_US.UTF-8
-
-pandas                : 3.0.2
-numpy                 : 2.4.4
-...
-```
-
-The output will be different on different machines. That's OK!
+- Choose `.venv`. If it runs, and you see output, then you have pandas.
 
 [IDE]: https://github.com/resources/articles/what-is-an-ide
 [requirements.txt]: requirements.txt
