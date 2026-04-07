@@ -162,8 +162,7 @@ Here's the workaround I used:
 - Search for `python.useEnvironmentsExtension`.
 - Click `Enables the Python environments extension.`
 
-**Caution:** My VSCode automatically installed packages to my
-my clean Python environment and broke it. Here's how I fixed it:
+**Caution:** VSCode automatically installed packages to my clean Python environment. Here's how I removed them:
 
 - In the second-to-left sidebar, find `ENVIRONMENT MANAGERS`.
 - Find the Python version that VSCode modified.
@@ -209,14 +208,16 @@ requirements.txt
 
 ### choose a Python environment
 
-When you run a script, VSCode automatically decides which Python environment to use. When it's wrong, this is how I fix it:
+VSCode automatically decides which Python environment to use. When it's wrong, this is how I fix it:
 
 - In the bottom-right corner of the VSCode window, look for some text like this:
 ```
 Python .venv (3.14.2)
 ```
 
-- Click on the version number (Mine is `3.14.2`. Yours might be different.) to open a popup. Select the environment you want.
+- Click on the version number (Mine is `3.14.2`. Yours might be different.) to open a popup.
+
+- Select the environment you want to use.
 
 **Caution:** VSCode automatically removed this on my machine.
 To fix it, right-click on any empty space in the `Status Bar`
