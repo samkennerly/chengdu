@@ -45,8 +45,8 @@ you can run it by opening a terminal and running this command:
 If you use Windows (or you like doing things yourself),
 open `mkvenv` in a text editor, read it, and run the commands.
 
-**Caution:** On my computer, the command to run Python 3 is `python3`.
-On some computers, it's `python` without the `3`.
+**Caution:** On some computers, the command to run Python 3 is
+`python`, not `python3`.
 
 To activate the virtual environment, run this:
 ```
@@ -63,7 +63,6 @@ To launch a [Jupyter server], run this:
 jupyter notebook
 ```
 Follow the instructions on screen. (On some computers, you don't need to do anything. Jupyter opens itself in a browser.)
-
 In your browser, click `New` and choose `Python 3 (ipykernel)`.
 Type this code and click the `▶` button:
 ```
@@ -94,7 +93,7 @@ numpy                 : 2.4.4
 ```
 The output will be different on different computers. That's OK!
 
-To stop jupyter, click on the terminal, and press CTRL-C.
+To stop Jupyter, click on the terminal and press CTRL-C.
 You should see this prompt:
 ```
 Shut down this Jupyter server (y/[n])?
@@ -168,7 +167,7 @@ Here's how to run it in VSCode:
 - Create a file named `requirements.txt`.
 - Copy everything from [requirements.txt] into that file.
 - In the far-left sidebar, find the Python logo and click it.
-(It looks like the Python logo two cartoon snakes.)
+(It looks like two cartoon snakes.)
 This should open the `Python Environments` view.
 
 **Caution:** My VSCode had no `Python Environments` view.
@@ -205,8 +204,9 @@ Select an environment manager
 ```
 Select a Python Environment
 ```
-- The options VSCode shows are Python versions, not python environments. Choose any recent Python version.
-- VSCode should show this prompt:
+- The options VSCode shows are Python versions,
+not python environments. Choose any recent Python version.
+VSCode should show this prompt:
 ```
 Enter a name for the virtual environment
 ```
@@ -214,7 +214,7 @@ Enter a name for the virtual environment
 ```
 Install project dependencies
 ```
-- VSCode should show a popup. Select this option:
+- VSCode should show a popup. Select this:
 ```
 requirements.txt
 ```
@@ -231,11 +231,11 @@ When you run a script, VSCode automatically decides which Python environment to 
 ```
 Python .venv (3.14.2)
 ```
-- Click on the version number (Mine is `3.14.2`. Yours might be different) to open a popup. Select the environment you want.
+- Click on the version number (Mine is `3.14.2`. Yours might be different.) to open a popup. Select the environment you want.
 
 **Caution:** VSCode automatically removed this on my machine.
 To fix it, right-click on any empty space in the `Status Bar`
-(it's the bar at the far bottom of the screen)
+(the bar at the far bottom of the screen)
 and click `Python interpreter`.
 
 
@@ -263,8 +263,7 @@ pd.show_versions()
 ```
 Select kernel for 'hello.ipynb'
 ```
-- Choose `.venv`.
-- If everything worked, you should see something like this:
+- Choose `.venv`. If everything worked, you should see something like this:
 ```
 INSTALLED VERSIONS
 ------------------
