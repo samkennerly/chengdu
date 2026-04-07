@@ -104,7 +104,7 @@ https://code.visualstudio.com/docs/python/environments#_delete-environments
 
 ### run a Python script
 
-- Create a file called `hello.py`. Add this to the file:
+- Create a file named `hello.py`. Add this to the file:
 ```
 # First program
 print("Hello, World!")
@@ -128,9 +128,9 @@ VSCode has its own custom REPL. Here's hot to run it:
 
 ### create a virtual environment
 
-- Create a file called `requirements.txt`.
+- Create a file named `requirements.txt`.
 - Copy everything from [requirements.txt] into that file.
-- Create a file called `xiongmao.py`. Add this to the file:
+- Create a file named `xiongmao.py`. Add this to the file:
 ```
 # Check if pandas is installed
 
@@ -183,25 +183,91 @@ If you can see the `Python Environments` view,
   Enter a name for the virtual environment
   ```
 - Enter `.venv`.
-- VSCode should show a menu. Select this option:
+- VSCode should show a popup. Select this option:
   ```
   Install project dependencies
   ```
-  Find your project folder and choose `requirements.txt`.
-
 **Caution:** This menu might not appear if you have created
 one or more environment(s), or if VSCode has automatically one or more created environment(s), or if VSCode had automatically detected one or more environments.
 
 
+- VSCode should show a popup. Select this option:
+  ```
+  requirements.txt
+  ```
+- Wait for VSCode to install packages.
+- Click on the `xiongmao.py` tab.
+- Click the ▶ button to run `xiongmao.py`.
 
+If it worked, you should see seomthing like this in the terminal:
+```
+INSTALLED VERSIONS
+------------------
+commit                : ab90747e3dae0e69b1bdbf083820b8075689b34b
+python                : 3.14.2
+python-bits           : 64
+OS                    : Darwin
+OS-release            : 24.6.0
+Version               : Darwin Kernel Version 24.6.0: Mon Jan 19 22:01:13 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_ARM64_T8122
+machine               : arm64
+processor             : arm
+byteorder             : little
+LC_ALL                : None
+LANG                  : en_US.UTF-8
+LOCALE                : en_US.UTF-8
 
+pandas                : 3.0.2
+numpy                 : 2.4.4
+...
+```
+The output will be different on different machines. That's OK!
 
 [requirements.txt]: requirements.txt
 [VSCode issue 581]: https://github.com/microsoft/vscode-python-environments/issues/581
 
 
+## choose a Python environment
+
+When you run a script, VSCode automatically decides which Python environment to use. When it chooses the wrong environment,
+this is how I fix it:
+
+In the bottom-right corner of the VSCode window, look for some text like this:
+```
+Python .venv (3.14.2)
+```
+
+**Caution:** VSCode automatically removed this on my machine. To fix it, right-click on any empty space in the `Status Bar` (it's the bar at the far bottom of the screen) and click `Python interpreter`.
+
+Click on the version number (Mine is `3.14.2`. Yours might be different) to open a popup. Select the environment you want.
+
 
 ## run jupyter notebooks
+
+- On the far-left of the VSCode window, find the `EXTENSIONS` view. (It's the icon that looks like four squares.)
+
+**Caution:** Do not click `Install`. By default, VSCode installs a recent Jupyter extension which does not work.
+
+- Search for `Jupyter` and right-click it.
+- Chose `Install specific version.`
+- Search for `2025.4.1` and select it.
+- Wait for VSCode to install its Jupyter extension.
+- On the far-left of the VSCode window, find the `EXPLORER` view. (It's the icon that looks like sheets of paper.)
+- Create a file named `hello.ipynb`.
+- In the `hello.ipynb` tab, click `+ Code` to add a new cell.
+- Enter this code:
+```
+"Hello, world!"
+```
+- Click the `▶ RunAll` button.
+- A popup should appear with this prompt:
+```
+Select kernel for 'hello.ipynb'
+```
+- Choose `.venv`.
+- You should see this under the cell:
+```
+'Hello, world!'
+```
 
 
 
