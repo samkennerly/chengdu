@@ -38,39 +38,40 @@ If you have `git` installed, then you can [clone] this repo.
 The `mkvenv` file is a [shell script] that creates a
 [virtual environment] and installs required packages.
 On any [POSIX] operating system (Linux, BSD, macOS, 麒麟, etc.),
-you can run it by entering this command in a terminal:
+you can run it by opening a terminal and running this command:
 ```
 ./mkvenv
 ```
-If you use Windows, or you want to know what the script does,
-open the file in a text editor and run the commands yourself.
+If you use Windows (or you like doing things yourself),
+open `mkvenv` in a text editor, read it, and run the commands.
 
 **Caution:** On my computer, the command to run Python 3 is `python3`.
 On some computers, it's `python` without the `3`.
 
-To activate the virtual environment, open a terminal and run:
+To activate the virtual environment, run this:
 ```
 source .venv/bin/activate
 ```
-When it's active, you should see `(.venv)` next to your prompt.
+If it worked, you should see `(.venv)` next to your prompt.
 For example, mine looks like this:
 ```
-(.venv) sam @hal9001 ~/code/chengdu
+(.venv) sam@hal9001 ~/code/chengdu
 ```
 
-To launch a [Jupyter server], run:
+To launch a [Jupyter server], run this:
 ```
 jupyter notebook
 ```
 Follow the instructions on screen. (On some computers, you don't need to do anything. Jupyter opens itself in a browser.)
-- Click `New` and choose `Python 3 (ipykernel)`.
-- In the cell, type this code:
+
+To check if everything works, click `New` and choose
+`Python 3 (ipykernel)`. In the cell, type this code:
 ```
 import pandas as pd
 
 pd.show_versions()
 ```
-- Click the `▶` button. You should see something like this:
+Click the `▶` button. You should see something like this:
 ```
 INSTALLED VERSIONS
 ------------------
