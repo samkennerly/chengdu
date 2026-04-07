@@ -17,6 +17,7 @@ from math import sqrt
 
 PLANET = "地球"
 
+
 def hello():
     # Print three greetings.
     # I copypasted this function from page 73, then changed it.
@@ -24,7 +25,9 @@ def hello():
     print("下午好")
     print("晚上好")
 
+
 hello()
+
 
 def say_hello_to(name):
     # Print three greetings to the name provided.
@@ -33,13 +36,16 @@ def say_hello_to(name):
     print("下午好 " + name)
     print("晚上好 " + name)
 
+
 say_hello_to("Ada Lovelace")
 say_hello_to("Charles Babbage")
+
 
 def mean(x, y):
     # Average of two numbers.
     # This function inputs two args and returns one output.
     return (x + y) / 2
+
 
 for x in range(10):
     print("The mean of 0 and", x, "is", mean(1, x))
@@ -69,12 +75,14 @@ print("type(None) is", type(None))
 
 # We can define functions with an unknown number of args:
 
+
 def say_hello_to_all(*args):
     # Print three greetings to the names provided.
     for name in args:
         print("早上好 " + name)
         print("下午好 " + name)
         print("晚上好 " + name)
+
 
 say_hello_to_all("Ada", "Charles", "Guido", "Sam")
 
@@ -83,6 +91,7 @@ say_hello_to_all("Ada", "Charles", "Guido", "Sam")
 # Kwargs are often used for optional inputs.
 # In this example, 'name' is a kwarg with default value None.
 
+
 def say_goodbye(name=None):
     # Print a goodbye message to the name provided.
     # If no name is input, print a generic goodbye.
@@ -90,6 +99,7 @@ def say_goodbye(name=None):
         print("再见")
     else:
         print("再见" + name)
+
 
 say_goodbye(name="Ada Lovelace")
 say_goodbye(name="Charles Babbage")
@@ -105,11 +115,13 @@ print("Ada", "Charles", "Guido", sep=" & ")
 # SUPER BONUS PROBLEM FOR BORED PEOPLE
 # What does this function do? Why would anyone do this?
 
+
 def show_kwargs(**kwargs):
     # ??? useless mystery function ???
     print("type(kwargs) is", type(kwargs))
     for key, value in kwargs.items():
         print(key, ":", value)
+
 
 show_kwargs(teacher="Ada", student="Sam")
 
@@ -128,6 +140,7 @@ except NameError as err:
 # The 'location' variable in a function is not the same as
 # the 'location' variable in any other function.
 
+
 def i_am_from(location):
     # Tell people where I come from.
     print("我是", PLANET, location, "人", sep="")
@@ -137,6 +150,7 @@ def i_am_in(location):
     # Tell people where I am now.
     print("我在", PLANET, location, sep="")
 
+
 i_am_from("美国")
 i_am_in("中国")
 
@@ -144,9 +158,11 @@ i_am_in("中国")
 # well. For complicated tasks, they write functions that call
 # other functions. This is called "composition."
 
+
 def euclid(*args):
     # Given a vector's components, find its Euclidean norm.
     return sqrt(sum(x * x for x in args))
+
 
 print("The Eucliean norm of (3, 4) is", euclid(3, 4))
 print("The Euclidean norm of (1, 2, 3) is", euclid(1, 2, 3))
