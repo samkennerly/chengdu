@@ -52,7 +52,7 @@ To activate the virtual environment, run this:
 ```
 source .venv/bin/activate
 ```
-If it worked, you should see `(.venv)` next to your prompt.
+You should see `(.venv)` next to your prompt.
 For example, mine looks like this:
 ```
 (.venv) sam@hal9001 ~/code/chengdu
@@ -64,14 +64,14 @@ jupyter notebook
 ```
 Follow the instructions on screen. (On some computers, you don't need to do anything. Jupyter opens itself in a browser.)
 
-To check if everything works, click `New` and choose
-`Python 3 (ipykernel)`. In the cell, type this code:
+In your browser, click `New` and choose `Python 3 (ipykernel)`.
+Type this code and click the `▶` button:
 ```
 import pandas as pd
 
 pd.show_versions()
 ```
-Click the `▶` button. You should see something like this:
+If everything works, you should see something like this:
 ```
 INSTALLED VERSIONS
 ------------------
@@ -93,16 +93,13 @@ numpy                 : 2.4.4
 ...
 ```
 The output will be different on different computers. That's OK!
-You now have `pandas`.
 
-To close jupyter, close your browser, click on the terminal,
-and press CTRL-C. You should see this prompt:
+To stop jupyter, click on the terminal, and press CTRL-C.
+You should see this prompt:
 ```
 Shut down this Jupyter server (y/[n])?
 ```
-Enter `y`.
-
-To deactivate the environment, run:
+Enter `y`. To deactivate the environment, run:
 ```
 deactivate
 ```
@@ -158,7 +155,7 @@ print("Hello, World!")
 
 **REPL** is Python's _Read-Evaluate-Print-Loop_.
 It's what you see when you run `python` or `python3`.
-VSCode has its own custom REPL. Here's hot to run it:
+Here's how to run it in VSCode:
 
 - Launch VSCode.
 - Press CTRL-SHIFT-P to open the Command Palette.
@@ -204,8 +201,7 @@ If you can see the `Python Environments` view,
 ```
 Select an environment manager
 ```
-- Choose `venv`.
-- VSCode should show this prompt:
+- Choose `venv`. VSCode should show this prompt:
 ```
 Select a Python Environment
 ```
@@ -214,8 +210,7 @@ Select a Python Environment
 ```
 Enter a name for the virtual environment
 ```
-- Enter `.venv`.
-- VSCode should show a popup. Select this option:
+- Enter `.venv`. VSCode should show a popup. Select this:
 ```
 Install project dependencies
 ```
@@ -228,7 +223,7 @@ requirements.txt
 [requirements.txt]: requirements.txt
 [VSCode issue 581]: https://github.com/microsoft/vscode-python-environments/issues/581
 
-## choose a Python environment
+### choose a Python environment
 
 When you run a script, VSCode automatically decides which Python environment to use. When it's wrong, this is how I fix it:
 
@@ -236,19 +231,19 @@ When you run a script, VSCode automatically decides which Python environment to 
 ```
 Python .venv (3.14.2)
 ```
+- Click on the version number (Mine is `3.14.2`. Yours might be different) to open a popup. Select the environment you want.
 
 **Caution:** VSCode automatically removed this on my machine.
 To fix it, right-click on any empty space in the `Status Bar`
 (it's the bar at the far bottom of the screen)
 and click `Python interpreter`.
 
-- Click on the version number (Mine is `3.14.2`. Yours might be different) to open a popup. Select the environment you want.
 
-## run jupyter notebooks
+### run jupyter notebooks
 
 - On the far-left of the VSCode window, find the `EXTENSIONS` view. (It's the icon that looks like four squares.)
 
-**Caution:** Do not click `Install`. By default, VSCode installs a recent Jupyter extension which does not work.
+**Caution:** Do not click `Install`. VSCode will automatically install a Jupyter extension which does not work.
 
 - Search for `Jupyter` and right-click it.
 - Chose `Install specific version.`
@@ -263,14 +258,12 @@ import pandas as pd
 
 pd.show_versions()
 ```
-- Click the `▶ RunAll` button.
-- A popup should appear with this prompt:
+- Click the `▶ RunAll` button. A popup should appear with this prompt:
 ```
 Select kernel for 'hello.ipynb'
 ```
 - Choose `.venv`.
-- You should see this under the cell:
-If it worked, you should see something like this:
+- If everything worked, you should see something like this:
 ```
 INSTALLED VERSIONS
 ------------------
@@ -292,7 +285,6 @@ numpy                 : 2.4.4
 ...
 ```
 The output will be different on different machines. That's OK!
-The most important thing is: you have `pandas`.
 
 
 ## links for self-study
