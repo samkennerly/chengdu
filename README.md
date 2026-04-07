@@ -244,6 +244,7 @@ and click `Python interpreter`.
 - On the far-left of the VSCode window, find the `EXTENSIONS` view. (It's the icon that looks like four squares.)
 
 **Caution:** Do not click `Install`. VSCode will automatically install a Jupyter extension which does not work.
+See [VSCode issue 17042] for details.
 
 - Search for `Jupyter` and right-click it.
 - Chose `Install specific version.`
@@ -286,6 +287,8 @@ numpy                 : 2.4.4
 ```
 The output will be different on different machines. That's OK!
 
+
+[VSCode issue 17042]: https://github.com/microsoft/vscode-jupyter/issues/17042
 
 ## links for self-study
 
