@@ -21,52 +21,33 @@ Name it whatever you want. Mine is:
 ~/code/chengdu/
 ```
 On Windows, the `/` slashes will be `\` backslashes, and
-the path will start with `C:` or `D:` or something similar.
+the path will start with `C:` or `D:` or something like that.
 For example, it might look like this:
 ```
-C:\Users\lenovo\code\chengdu
+C:\Users\Lenovo\Projects\Chengdu
 ```
 If you have `git` installed, then you can [clone] this repo.
-You'll have a copy of all the files, my edits, and my mistakes.
 
 [clone]: https://git-scm.com/docs/git-clone
 
 
 ## install dependencies
 
-The `mkvenv` file explains how to create a [virtual environment]
-and install all required packages. `mkvenv` is a [shell script].
+The `mkvenv` file is a [shell script] that creates a
+[virtual environment] and installs required packages.
 On any [POSIX] operating system (Linux, BSD, macOS, 麒麟, etc.),
 you can run it by entering this command in a terminal:
 ```
 ./mkvenv
 ```
+If you use Windows, or you want to know what the script does,
+open the file in a text editor and run the commands yourself.
 
 **Caution:** On my computer, the command to run Python 3 is `python3`. On some computers, it's `python` without the `3`.
 
 [virtual environment]: https://docs.python.org/3/library/venv.html
 [shell script]: https://www.dotlinux.net/linux-shell-scripting-tutorial/
 [POSIX]: https://www.baeldung.com/linux/posix
-
-
-## links for self-study
-
-If you want to know more, see these links:
-
-- class textbook
-https://automatetheboringstuff.com/
-- python functions
-https://docs.python.org/3/library/functions.html
-- numpy basics
-https://numpy.org/doc/stable/user/absolute_beginners.html
-- scipy tutorial
-https://docs.scipy.org/doc/scipy/tutorial
-- pandas user guide
-https://pandas.pydata.org/docs/user_guide
-- seaborn examples
-https://seaborn.pydata.org/examples/
-- scikit-learn user guide
-https://scikit-learn.org/stable/user_guide.htm
 
 
 ## extra steps for VSCode users
@@ -250,3 +231,23 @@ numpy                 : 2.4.4
 ```
 The output will be different on different machines. That's OK!
 The most important thing is: you have `pandas`.
+
+
+## links for self-study
+
+If you want to know more, see these links:
+
+- class textbook
+https://automatetheboringstuff.com/
+- python functions
+https://docs.python.org/3/library/functions.html
+- numpy basics
+https://numpy.org/doc/stable/user/absolute_beginners.html
+- scipy tutorial
+https://docs.scipy.org/doc/scipy/tutorial
+- pandas user guide
+https://pandas.pydata.org/docs/user_guide
+- seaborn examples
+https://seaborn.pydata.org/examples/
+- scikit-learn user guide
+https://scikit-learn.org/stable/user_guide.htm
