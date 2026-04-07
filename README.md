@@ -2,9 +2,11 @@
 
 This [git repo] contains examples for class.
 
-The **builtin** folder contains Python scripts which can be run with Python's [builtin] functions and libraries.
+The **builtin** folder contains Python scripts which can be run with Python's
+[builtin] functions and libraries.
 
-The **science** folder contains [Jupyter notebooks]. These require extra Python [packages] listed in `requirements.txt`.
+The **science** folder contains [Jupyter notebooks]. These require extra Python
+[packages] listed in `requirements.txt`.
 
 [git repo]: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#ch02-git-basics-chapter
 [builtin]: https://docs.python.org/
@@ -31,7 +33,7 @@ If you have `git` installed, then you can [clone] this repo.
 [clone]: https://git-scm.com/docs/git-clone
 
 
-## install dependencies
+## how to use this repo (without VSCode)
 
 The `mkvenv` file is a [shell script] that creates a
 [virtual environment] and installs required packages.
@@ -43,14 +45,74 @@ you can run it by entering this command in a terminal:
 If you use Windows, or you want to know what the script does,
 open the file in a text editor and run the commands yourself.
 
-**Caution:** On my computer, the command to run Python 3 is `python3`. On some computers, it's `python` without the `3`.
+**Caution:** On my computer, the command to run Python 3 is `python3`.
+On some computers, it's `python` without the `3`.
+
+To activate the virtual environment, open a terminal and run:
+```
+source .venv/bin/activate
+```
+When it's active, you should see `(.venv)` next to your prompt.
+For example, mine looks like this:
+```
+(.venv) sam @hal9001 ~/code/chengdu
+```
+
+To launch a [Jupyter server], run:
+```
+jupyter notebook
+```
+Follow the instructions on screen. (On some computers, you don't need to do anything. Jupyter opens itself in a browser.)
+- Click `New` and choose `Python 3 (ipykernel)`.
+- In the cell, type this code:
+```
+import pandas as pd
+
+pd.show_versions()
+```
+- Click the `▶` button. You should see something like this:
+```
+INSTALLED VERSIONS
+------------------
+commit                : ab90747e3dae0e69b1bdbf083820b8075689b34b
+python                : 3.14.2
+python-bits           : 64
+OS                    : Darwin
+OS-release            : 24.6.0
+Version               : Darwin Kernel Version 24.6.0: Mon Jan 19 22:01:13 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_ARM64_T8122
+machine               : arm64
+processor             : arm
+byteorder             : little
+LC_ALL                : None
+LANG                  : en_US.UTF-8
+LOCALE                : en_US.UTF-8
+
+pandas                : 3.0.2
+numpy                 : 2.4.4
+...
+```
+The output will be different on different computers. That's OK!
+You now have `pandas`.
+
+To close jupyter, close your browser, click on the terminal,
+and press CTRL-C. You should see this prompt:
+```
+Shut down this Jupyter server (y/[n])?
+```
+Enter `y`.
+
+To deactivate the environment, run:
+```
+deactivate
+```
 
 [virtual environment]: https://docs.python.org/3/library/venv.html
 [shell script]: https://www.dotlinux.net/linux-shell-scripting-tutorial/
 [POSIX]: https://www.baeldung.com/linux/posix
+[Jupyter server]: https://jupyter-server.readthedocs.io/en/latest/index.html
 
 
-## extra steps for VSCode users
+## how to use this repo (with VSCode)
 
 **VSCode** is a short name for an [IDE] called
 _Microsoft Visual Studio Code_.
@@ -181,7 +243,6 @@ and click `Python interpreter`.
 
 - Click on the version number (Mine is `3.14.2`. Yours might be different) to open a popup. Select the environment you want.
 
-
 ## run jupyter notebooks
 
 - On the far-left of the VSCode window, find the `EXTENSIONS` view. (It's the icon that looks like four squares.)
@@ -208,7 +269,7 @@ Select kernel for 'hello.ipynb'
 ```
 - Choose `.venv`.
 - You should see this under the cell:
-If it worked, you should see seomthing like this in the terminal:
+If it worked, you should see something like this:
 ```
 INSTALLED VERSIONS
 ------------------
