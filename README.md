@@ -265,6 +265,8 @@ If you want to know more, see these links:
 
 - class textbook
 https://automatetheboringstuff.com/
+- python docs in 中文
+https://docs.python.org/zh-cn/3/
 - python functions
 https://docs.python.org/3/library/functions.html
 - numpy basics
