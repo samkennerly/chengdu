@@ -8,7 +8,7 @@ import random
 
 # ADVANCED TOPIC FOR BORED PEOPLE:
 # If you already know list indexing, slicing, and comprehensions,
-# then this is all review. If your .venv works, do this:
+# and your .venv and Jupyter setup works, do this:
 # 0. Create a new notebook called arrays.ipynb.
 # 1. Type this line in the first cell: import numpy as np
 # 2. Try to do these examples with np.array() instead of list().
@@ -112,13 +112,22 @@ g_names = [x for x in names if x.startswith('G')]
 print("Names that start with G:", g_names)
 
 # This list comprehension uses 'not in' to filter a list.
-bad_names = ["Linus", "Sam"]
+bad_names = ["Linus", "Sam", "Samuel"]
 best_names = [x for x in names if x not in bad_names]
 print("Best students:", best_names)
 
-# ADVANCED TOPIC FOR BORED PEOPLE:
-# Use the builtin filter() function to what I just did.
-# Hint: I think you'll need to define some functions.
+# zip() is used to loop over multiple lists together.
+for name, score in zip(names, scores):
+    print(name, "got", score, "points")
+
+# We can make complex loops with iterators and comparisons:
+for name, score in zip(names, scores):
+    if name in bad_names:
+        print(name, "must take the test again.")
+    elif score == 100:
+        print(name, "should be in a more advanced class.")
+    else:
+        print(name, "got", score, "points")
 
 # random.shuffle() changes the order of values in a list.
 random.shuffle(names)
