@@ -20,6 +20,11 @@ empty = [ ]
 names = ["Ada", "Charles", "Grace", "Guido", "Linus", "Sam"]
 scores = [100, 90, 98, 80, 0, 42]
 
+# Class assigment: list the names in your group.
+# Use 汉字 if you want to. Python doesn't care!
+# Any sequence of valid Unicode characters can be a string.
+# Whatever I do with my 'names' variable, try it with yours.
+
 # The builtin len() function returns list length.
 print("list lengths are", len(empty), len(names), len(scores))
 
@@ -213,7 +218,6 @@ print("Sorted distinct cities:", sorted(set(cities)))
 # for numbers, different alphabets, and special characters.
 words = ["成都","北京", "Chicago", "Linus", "ZXMoto", "?"]
 print("Sorted words:", sorted(words))
-
 numbers = (2, 0, 0, 6, 0, 4, 0, 8)
 print("Sorted numbers:", sorted(numbers))
 
