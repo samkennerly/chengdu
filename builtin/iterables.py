@@ -51,6 +51,13 @@ print("grades[0][0]", exam[0][0])
 print("grades[0][1]", exam[0][1])
 print("grades[0][2]", exam[0][2])
 
+# Length, index, and slicing also work on strings.
+my_name = "Sam"
+print("len(my_name)", len(my_name))
+print("my_name[0]", my_name[0])
+print("my_name[-1]", my_name[-1])
+print("my_name[0 : 2]", my_name[0 : 2])
+
 # Lists are "mutable." We can change values:
 names[-1] = "Samuel"
 print(names)
@@ -65,7 +72,7 @@ print(names)
 print(names + ["Valtteri", "Checo"])
 print(names * 2)
 
-# Lists, tuples, and sets are called "iterables."
+# Lists and strings are "iterable."
 # That means they have a hidden .__iter__() method.
 # That means we can "iterate over them" with for loops.
 for name in names:
