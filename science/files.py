@@ -8,7 +8,7 @@ import json
 
 from pathlib import Path
 
-FOLDER = Path(__file__).parent / "data"
+FOLDER = Path(__file__).parent / "data/test"
 TXT_PATH = FOLDER / "test.txt"
 CSV_PATH = FOLDER / "test.csv"
 JSON_PATH = FOLDER / "test.json"
