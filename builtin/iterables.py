@@ -16,7 +16,7 @@ import random
 # https://numpy.org/doc/stable/user/absolute_beginners.html
 
 # Here are some example lists:
-empty = [ ]
+empty = []
 names = ["Ada", "Charles", "Grace", "Guido", "Linus", "Sam"]
 scores = [100, 90, 98, 80, 0, 42]
 
@@ -43,9 +43,9 @@ except IndexError as err:
 
 # We can get multiple elements by "slicing."
 # Slices accept (start, stop, step) args.
-print("names[0 : 2]", names[0 : 2])
-print("names[2 : -1]", names[2 : -1])
-print("names[0 : -1 : 2]", names[0 : -1 : 2])
+print("names[0 : 2]", names[0:2])
+print("names[2 : -1]", names[2:-1])
+print("names[0 : -1 : 2]", names[0:-1:2])
 
 # We can make lists of almost any object.
 # This example is a list of lists.
@@ -61,7 +61,7 @@ my_name = "Sam"
 print("len(my_name)", len(my_name))
 print("my_name[0]", my_name[0])
 print("my_name[-1]", my_name[-1])
-print("my_name[0 : 2]", my_name[0 : 2])
+print("my_name[0 : 2]", my_name[0:2])
 
 # Lists are "mutable." We can change values:
 names[-1] = "Samuel"
@@ -88,7 +88,7 @@ for i, name in enumerate(names):
     print("Student number", i, "is named", name)
 
 # We can make new lists by iterating over lists.
-low_names = [ ]  # [ ] means "empty list"
+low_names = []  # [ ] means "empty list"
 for name in names:
     low_names.append(name.lower())
 print("Lowercase names:", low_names)
@@ -120,7 +120,7 @@ if "Dave" not in names:
 
 # List comprehensions can include conditions.
 # This is called "filtering" a list.
-g_names = [x for x in names if x.startswith('G')]
+g_names = [x for x in names if x.startswith("G")]
 print("Names that start with G:", g_names)
 
 # This list comprehension uses 'not in' to filter a list.
@@ -205,7 +205,7 @@ cities = [
     "Chengdu",
     "New York",
     "New York",
-    "New York"
+    "New York",
 ]
 print("Distinct cities:", list(set(cities)))
 
@@ -216,7 +216,7 @@ print("Sorted distinct cities:", sorted(set(cities)))
 # "Lex" is short for "Lexicographic order."
 # It's like alphabetic order with extra rules
 # for numbers, different alphabets, and special characters.
-words = ["成都","北京", "Chicago", "Linus", "ZXMoto", "?"]
+words = ["成都", "北京", "Chicago", "Linus", "ZXMoto", "?"]
 print("Sorted words:", sorted(words))
 numbers = (2, 0, 0, 6, 0, 4, 0, 8)
 print("Sorted numbers:", sorted(numbers))

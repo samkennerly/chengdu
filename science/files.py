@@ -53,7 +53,7 @@ def save_csv(data, path):
 # Tests
 
 
-def test_txt(path = TXT_PATH):
+def test_txt(path=TXT_PATH):
     hello = "Hello, World!"
     print("\nTest text:")
     print(hello)
@@ -64,7 +64,7 @@ def test_txt(path = TXT_PATH):
     assert data == hello, f"text in {path} is {data}"
 
 
-def test_json(path = JSON_PATH):
+def test_json(path=JSON_PATH):
     fruits = {
         "apple": ["苹果", "píngguǒ"],
         "cherry": ["樱桃", "yīngtáo"],
@@ -81,7 +81,7 @@ def test_json(path = JSON_PATH):
     assert data == fruits, f"data in {path} is {data}"
 
 
-def test_csv(path = CSV_PATH):
+def test_csv(path=CSV_PATH):
     students = [
         ["family_name", "given_name", "birthday", "country_code"],
         ["Babbage", "Charles", "1791-12-26", "UK"],
