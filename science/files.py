@@ -1,6 +1,10 @@
 """
-Read and write some files.
-Use common formats that anyone can read.
+Read and write some files in common text-like formats.
+If a program can read plain text, then it can read these files.
+
+This file is also an example of automated testing.
+If you run it as a script, it will save some files, then read
+those files, and raise an error if anything goes wrong.
 """
 
 import csv
@@ -51,7 +55,6 @@ def save_csv(data, path):
 
 
 # Tests
-
 
 def test_txt(path=TXT_PATH):
     hello = "Hello, World!"
