@@ -1,0 +1,5 @@
+Schedule for this week:
+星期二 Tuesday   : more example projects + time to work on projects
+星期三 Wednesday : pandas.Timestamp + time to work on projects
+星期四 Thursday  : last few slides + time to work on projects
+星期五 Friday    : present all of our projects
