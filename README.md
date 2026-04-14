@@ -10,7 +10,7 @@ The **science** folder contains [Jupyter notebooks].
 Required Python [packages] are in `requirements.txt`.
 
 For more information about these packages,
-scroll to the bottom of this page and read the [links](#links).
+scroll to the bottom of this page and read the [links](#links-for-self-study).
 
 [git repo]: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#ch02-git-basics-chapter
 [builtin]: https://docs.python.org/3/library/index.html
