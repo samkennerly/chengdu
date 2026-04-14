@@ -1,5 +1,6 @@
 # projects
 
+
 This folder contains example notebooks.
 Each notebook does some ETL (Extract, Transform, Load) work.
 ETL is often the most frustrating part of a real project.
@@ -11,7 +12,7 @@ Copy and modify my code if you want to. It's open-source!
 A good project should ask at least one question, use at least one dataset to answer the question(s), and explain your reasoning.
 
 You can use the datasets in this repo or find another source.
-(If you're using another source, please show it to me in class.)
+If you're using another source, please show it to me in class.
 
 It's OK if another group does a project very similar to yours or uses the same dataset(s) as your group.
 
@@ -30,14 +31,13 @@ You can bring extra material (like PPT or PDF slides) if you want to.
 Extra material is not required. One Jupyter notebook is enough.
 
 Everyone in the group should go to the front of the classroom together.
+You can choose one person to do most of the talking, or you can share that job equally.
 Each group member should say something in English.
-You can choose one person to do most of the talking,
-or you can share that job equally. It's your decision.
-It's OK if your English is not perfect. 学习语言很难！我的中文不好。
+It's OK if your English is not perfect.
+学习语言很难！我的中文不好。
 
 **Note:**
 To use the classroom displays,
-I think you need to install the 传屏助手 app from [e.seewo.com].
-On my computer, the app is called _ExceedShare_.
+I think you need to install the 传屏助手 app from [e.seewo.com]
 
 [e.seewo.com]: https://e.seewo.com/

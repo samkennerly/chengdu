@@ -9,16 +9,14 @@ These use Python's [builtin] functions and libraries.
 The **science** folder contains [Jupyter notebooks].
 Required Python [packages] are in `requirements.txt`.
 
-The **science/data** folder contains example datasets.
-Use these for class projects or find your own datasets.
-
-The **science/projects** folder contains example projects.
-Read these for class project ideas or create your own.
+For more information about these packages,
+scroll to the bottom of this page and read the [links].
 
 [git repo]: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#ch02-git-basics-chapter
 [builtin]: https://docs.python.org/3/library/index.html
 [Jupyter notebooks]: https://jupyter-notebook.readthedocs.io/
 [packages]: https://packaging.python.org/
+[links]: #links
 
 
 ## choose a project folder
