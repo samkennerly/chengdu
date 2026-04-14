@@ -1,13 +1,20 @@
 # chengdu
 
 
-This [git repo] contains examples for class.
+This [git repo] contains example code and data for class.
 
-The **builtin** folder contains Python scripts which can be run with Python's
-[builtin] functions and libraries.
+The **builtin** folder contains Python scripts.
+These use only Python's [builtin] functions and libraries.
+They do not require any extra packages.
 
-The **science** folder contains [Jupyter notebooks]. These require extra Python
-[packages] listed in `requirements.txt`.
+The **science** folder contains [Jupyter notebooks].
+Required Python [packages] are in `requirements.txt`.
+
+The **science/data** folder contains example datasets.
+Use these for class projects - or find your own datasets.
+
+The **science/projects** folder contains example projects.
+Read these for class project ideas - or create your own.
 
 [git repo]: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#ch02-git-basics-chapter
 [builtin]: https://docs.python.org/3/library/index.html
@@ -29,9 +36,11 @@ For example, it might look like this:
 ```
 C:\Users\Lenovo\Projects\Chengdu
 ```
-If you have `git` installed, then you can [clone] this repo.
+If you have `git` installed, then you can [git clone] this repo
+and [git pull] to get the latest changes.
 
-[clone]: https://git-scm.com/docs/git-clone
+[git clone]: https://git-scm.com/docs/git-clone
+[git pull]: https://git-scm.com/docs/git-pull
 
 
 ## how to use this repo (without VSCode)
@@ -43,9 +52,6 @@ you can run it by opening a terminal and running this command:
 ```
 ./mkvenv
 ```
-
-If you use Windows (or you like doing things yourself),
-open `mkvenv` in a text editor, read it, and run the commands.
 
 **Caution:** On some computers, the command to run Python 3 is
 `python`, not `python3`.
@@ -74,8 +80,6 @@ import pandas as pd
 
 pd.show_versions()
 ```
-
-If it runs, and you see output, then you have pandas.
 
 To stop Jupyter, click on the terminal and press CTRL-C.
 You should see this prompt:
