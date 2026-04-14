@@ -1,7 +1,6 @@
 # projects
 
-This folder contains example projects.
-
+This folder contains example notebooks.
 Each notebook does some ETL (Extract, Transform, Load) work.
 ETL is often the most frustrating part of a real project.
 Copy and modify my code if you want to. It's open-source!
@@ -23,19 +22,21 @@ A short, simple, clear project is better than a long, difficult project that is 
 
 Try to make your presentation about 5 minutes long.
 It doesn't need to be exactly 5 minutes.
-It does need to be less than 8 minutes.
+It must be less than 8 minutes.
 
 Each group should show something on the classroom screens.
 I suggest showing your code, any plots, and your main results.
-You can bring extra material (like PPT slides) if you want to.
+You can bring extra material (like PPT or PDF slides) if you want to.
 Extra material is not required. One Jupyter notebook is enough.
 
-Everyone in the group should go to the front of the classroom together. Each group member should say something in English.
-It's OK if your English is not perfect. 学习语言很难！我的中文不好。
+Everyone in the group should go to the front of the classroom together.
+Each group member should say something in English.
 You can choose one person to do most of the talking,
 or you can share that job equally. It's your decision.
+It's OK if your English is not perfect. 学习语言很难！我的中文不好。
 
-**Note:** Check if you can use the classroom displays!
+**Note:**
+To use the classroom displays,
 I think you need to install the 传屏助手 app from [e.seewo.com].
 On my computer, the app is called _ExceedShare_.
 

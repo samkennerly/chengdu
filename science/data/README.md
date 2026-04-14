@@ -1,6 +1,10 @@
 # data folder
 
 
+## UNDER CONSTRUCTION
+
+This README is not done yet.
+
 TODO: disclaimer for unknown accuracy
 
 TODO: normally don't put data in repos, but this is small

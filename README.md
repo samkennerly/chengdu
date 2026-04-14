@@ -4,17 +4,16 @@
 This [git repo] contains example code and data for class.
 
 The **builtin** folder contains Python scripts.
-These use only Python's [builtin] functions and libraries.
-They do not require any extra packages.
+These use Python's [builtin] functions and libraries.
 
 The **science** folder contains [Jupyter notebooks].
 Required Python [packages] are in `requirements.txt`.
 
 The **science/data** folder contains example datasets.
-Use these for class projects - or find your own datasets.
+Use these for class projects or find your own datasets.
 
 The **science/projects** folder contains example projects.
-Read these for class project ideas - or create your own.
+Read these for class project ideas or create your own.
 
 [git repo]: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#ch02-git-basics-chapter
 [builtin]: https://docs.python.org/3/library/index.html
@@ -24,14 +23,13 @@ Read these for class project ideas - or create your own.
 
 ## choose a project folder
 
-First, decide where you want to save this project.
-Create a folder (also known as a _directory_) on your computer.
-Name it whatever you want. Mine is:
+Create a folder (also known as a _directory_) for this repo.
+Name it whatever you want. For example, mine is:
 ```
 ~/code/chengdu/
 ```
-On Windows, the `/` slashes will be `\` backslashes, and
-the path will start with `C:` or `D:` or something like that.
+On Windows, the `/` slashes will be `\` backslashes,
+and the path will start with a drive letter like `C:` or `D:`.
 For example, it might look like this:
 ```
 C:\Users\Lenovo\Projects\Chengdu
